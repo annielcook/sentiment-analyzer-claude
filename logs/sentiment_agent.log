@@ -1,0 +1,883 @@
+2025-03-14 18:31:01,799 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-14 18:31:01,882 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-14 18:31:42,688 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-14 18:31:50,783 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-14 18:31:50,784 - sentiment_agent - INFO - NumPy is available
+2025-03-14 18:31:59,282 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-14 18:31:59,283 - sentiment_agent - INFO - Running in TEST MODE - analyzing latest posts
+2025-03-14 18:31:59,283 - sentiment_agent - INFO - Processing RSS feed
+2025-03-14 18:31:59,284 - sentiment_agent - INFO - Fetching posts from JSON API: https://www.reddit.com/r/boston/.json
+2025-03-14 18:32:00,434 - sentiment_agent - INFO - JSON API returned 27 posts
+2025-03-14 18:32:00,435 - sentiment_agent - INFO - Added post from JSON API: Boston Weekly Discussion Thread, Week of : Monday March 10 (ID: 1j7tlud)
+2025-03-14 18:32:00,437 - sentiment_agent - INFO - Added post from JSON API: Good afternoon Boston, here is a list of things to do this weekend, March 13th - 16th (ID: 1jaim7d)
+2025-03-14 18:32:00,438 - sentiment_agent - INFO - Added post from JSON API: Had some fun with my marathon training last night (ID: 1jb6j32)
+2025-03-14 18:32:00,439 - sentiment_agent - INFO - Added post from JSON API: Livin the dream (ID: 1jbbztv)
+2025-03-14 18:32:00,440 - sentiment_agent - INFO - Added post from JSON API: What did I just see? A boat towing a house?? (ID: 1jbdjrl)
+2025-03-14 18:32:00,441 - sentiment_agent - INFO - Added post from JSON API: Visitor? (ID: 1jb3xrc)
+2025-03-14 18:32:00,443 - sentiment_agent - INFO - Added post from JSON API: I live in Tx now. I think i understand why people think boston drivers are the worst. (ID: 1jb4hxt)
+2025-03-14 18:32:00,443 - sentiment_agent - INFO - Added post from JSON API: Suspected clients in high-end Massachusetts, Virginia brothel case being revealed at Cambridge hearing (ID: 1jbbw1f)
+2025-03-14 18:32:00,444 - sentiment_agent - INFO - Added post from JSON API: 93 crash (ID: 1jbbq5x)
+2025-03-14 18:32:00,445 - sentiment_agent - INFO - Added post from JSON API: UPDATED: 50501 protest *tomorrow* on Boston Common (ID: 1jb3xr3)
+2025-03-14 18:32:00,446 - sentiment_agent - INFO - Added post from JSON API: Total Lunar Eclipse from Cambridge (ID: 1jb0go0)
+2025-03-14 18:32:00,447 - sentiment_agent - INFO - Added post from JSON API: This goes so unbelievably hard (ID: 1jae7by)
+2025-03-14 18:32:00,448 - sentiment_agent - INFO - Added post from JSON API: For the first time in decades, trains on the MBTA subway system hit 50 mph (ID: 1jbeffh)
+2025-03-14 18:32:00,448 - sentiment_agent - INFO - Added post from JSON API: Friday stroll (ID: 1jbeugu)
+2025-03-14 18:32:00,449 - sentiment_agent - INFO - Added post from JSON API: Boston's Finest in Savin Hill (ID: 1jb89oq)
+2025-03-14 18:32:00,450 - sentiment_agent - INFO - Added post from JSON API: ‘Have you no decency?’: Rep. Keating comes to transgender colleague’s defense (ID: 1jaqrbb)
+2025-03-14 18:32:00,452 - sentiment_agent - INFO - Added post from JSON API: How will Trump policies affect Boston area economy and real estate? (ID: 1jb4sol)
+2025-03-14 18:32:00,452 - sentiment_agent - INFO - Added post from JSON API: Total lunar eclipse from Mass Ave.  The clouds cleared in time to see the partial and total phases. (ID: 1jayh4o)
+2025-03-14 18:32:00,453 - sentiment_agent - INFO - Added post from JSON API: Parking spot on Beacon Hill listed for an eye-popping $750,000 (ID: 1jb4cv0)
+2025-03-14 18:32:00,453 - sentiment_agent - INFO - Added post from JSON API: Chinese Hackers Sat Undetected in Small Massachusetts Power Utility for Months (ID: 1jao4ro)
+2025-03-14 18:32:00,454 - sentiment_agent - INFO - Added post from JSON API: School Committee eliminates Office of Educational Equity, rejects hybridization of food services (ID: 1jb5rl8)
+2025-03-14 18:32:00,455 - sentiment_agent - INFO - Added post from JSON API: Next Stop, Esplanade (ID: 1jbg3rt)
+2025-03-14 18:32:00,455 - sentiment_agent - INFO - Added post from JSON API: 10 micro signs of spring for those who also desperately need them (ID: 1jab7t2)
+2025-03-14 18:32:00,456 - sentiment_agent - INFO - Added post from JSON API: Boston Protest List (ID: 1jav5at)
+2025-03-14 18:32:00,457 - sentiment_agent - INFO - Added post from JSON API: 7 Boston cops earned more than $500,000 last year (ID: 1jabtzl)
+2025-03-14 18:32:00,457 - sentiment_agent - INFO - Added post from JSON API: Mr. Pink’s front end for a change. 🍑 (ID: 1jary5w)
+2025-03-14 18:32:00,458 - sentiment_agent - INFO - Added post from JSON API: "And on your right, Elliot Davis" (ID: 1jam605)
+2025-03-14 18:32:00,459 - sentiment_agent - INFO - Total posts processed: 27
+2025-03-14 18:32:00,460 - sentiment_agent - INFO - Found 5 posts for testing
+2025-03-14 18:32:15,956 - sentiment_agent - INFO - Categorized post 1j7tlud as Weather
+2025-03-14 18:33:04,100 - sentiment_agent - INFO - Categorized post 1jaim7d as Other
+2025-03-14 18:33:04,141 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (5683) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-14 18:33:04,142 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-14 18:33:04,145 - sentiment_agent - ERROR - Error processing post 1jaim7d: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-14 18:33:04,147 - sentiment_agent - INFO - Analyzing 1 images for post 1jb6j32
+2025-03-14 18:33:08,001 - sentiment_agent - INFO - Categorized post 1jb6j32 as Photo
+2025-03-14 18:33:08,039 - sentiment_agent - INFO - Analyzing 1 images for post 1jbbztv
+2025-03-14 18:33:10,583 - sentiment_agent - INFO - Categorized post 1jbbztv as Other
+2025-03-14 18:33:10,618 - sentiment_agent - INFO - Analyzing 2 images for post 1jbdjrl
+2025-03-14 18:33:15,214 - sentiment_agent - INFO - Categorized post 1jbdjrl as Question
+2025-03-14 18:33:15,259 - sentiment_agent - INFO - Test complete
+2025-03-20 15:16:30,298 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 15:16:30,442 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 15:16:31,787 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 15:16:32,020 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 15:16:32,020 - sentiment_agent - INFO - NumPy is available
+2025-03-20 15:16:32,477 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 15:16:32,477 - sentiment_agent - INFO - Starting agent with check interval of 15 minutes
+2025-03-20 15:16:32,477 - sentiment_agent - INFO - Processing RSS feed
+2025-03-20 15:16:32,477 - sentiment_agent - INFO - No Reddit JSON URL configured, using sample data
+2025-03-20 15:16:32,477 - sentiment_agent - INFO - Returning 5 sample posts
+2025-03-20 15:16:32,478 - sentiment_agent - INFO - Found 5 new posts
+2025-03-20 15:16:37,589 - sentiment_agent - INFO - Categorized post sample1 as Photo
+2025-03-20 15:16:38,106 - sentiment_agent - INFO - Sentiment for post sample1: 1.00 (POSITIVE)
+2025-03-20 15:16:40,151 - sentiment_agent - INFO - Categorized post sample2 as Question
+2025-03-20 15:16:40,181 - sentiment_agent - INFO - Sentiment for post sample2: -1.00 (NEGATIVE)
+2025-03-20 15:16:42,386 - sentiment_agent - INFO - Categorized post sample3 as Question
+2025-03-20 15:16:42,414 - sentiment_agent - INFO - Sentiment for post sample3: 1.00 (POSITIVE)
+2025-03-20 15:16:44,536 - sentiment_agent - INFO - Categorized post sample4 as Transportation
+2025-03-20 15:16:44,569 - sentiment_agent - INFO - Sentiment for post sample4: -1.00 (NEGATIVE)
+2025-03-20 15:16:46,816 - sentiment_agent - INFO - Categorized post sample5 as Question
+2025-03-20 15:16:46,851 - sentiment_agent - INFO - Sentiment for post sample5: 0.80 (POSITIVE)
+2025-03-20 15:16:46,852 - sentiment_agent - INFO - Found 0 bursts of negative sentiment
+2025-03-20 15:18:24,920 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 15:18:25,044 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 15:18:26,359 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 15:18:26,572 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 15:18:26,572 - sentiment_agent - INFO - NumPy is available
+2025-03-20 15:18:26,923 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 15:18:26,924 - sentiment_agent - INFO - Starting agent with check interval of 15 minutes
+2025-03-20 15:18:26,924 - sentiment_agent - INFO - Processing RSS feed
+2025-03-20 15:18:26,924 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 15:18:27,441 - sentiment_agent - ERROR - Error processing post: string indices must be integers, not 'str'
+2025-03-20 15:18:27,441 - sentiment_agent - ERROR - Error processing post: string indices must be integers, not 'str'
+2025-03-20 15:18:27,442 - sentiment_agent - INFO - Fetched 25 new posts from Reddit JSON API
+2025-03-20 15:18:27,442 - sentiment_agent - INFO - Found 25 new posts
+2025-03-20 15:18:40,829 - sentiment_agent - INFO - Categorized post 1jd7i60 as Weather
+2025-03-20 15:18:41,020 - sentiment_agent - INFO - Sentiment for post 1jd7i60: -0.98 (NEGATIVE)
+2025-03-20 15:18:41,020 - sentiment_agent - INFO - Analyzing 1 images for post 1jfuzy2
+2025-03-20 15:19:37,854 - sentiment_agent - INFO - Categorized post 1jfuzy2 as Other
+2025-03-20 15:19:38,067 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (4672) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:19:38,067 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:19:38,069 - sentiment_agent - ERROR - Error processing post 1jfuzy2: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:19:38,073 - sentiment_agent - INFO - Analyzing 1 images for post 1jfxgpd
+2025-03-20 15:19:43,273 - sentiment_agent - INFO - Categorized post 1jfxgpd as Photo
+2025-03-20 15:19:43,328 - sentiment_agent - INFO - Sentiment for post 1jfxgpd: -0.45 (NEGATIVE)
+2025-03-20 15:19:45,505 - sentiment_agent - INFO - Categorized post 1jfwkw7 as Politics
+2025-03-20 15:19:45,531 - sentiment_agent - INFO - Sentiment for post 1jfwkw7: -1.00 (NEGATIVE)
+2025-03-20 15:19:45,531 - sentiment_agent - INFO - Analyzing 1 images for post 1jfswk4
+2025-03-20 15:19:49,833 - sentiment_agent - INFO - Categorized post 1jfswk4 as Question
+2025-03-20 15:19:49,866 - sentiment_agent - INFO - Sentiment for post 1jfswk4: -0.70 (NEGATIVE)
+2025-03-20 15:20:23,957 - sentiment_agent - INFO - Categorized post 1jfsesn as Other
+2025-03-20 15:20:24,000 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (625) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:20:24,000 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:20:24,000 - sentiment_agent - ERROR - Error processing post 1jfsesn: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:20:28,622 - sentiment_agent - INFO - Categorized post 1jfzf7b as Transportation
+2025-03-20 15:20:28,665 - sentiment_agent - INFO - Sentiment for post 1jfzf7b: 0.51 (POSITIVE)
+2025-03-20 15:20:28,666 - sentiment_agent - INFO - Analyzing 1 images for post 1jffq7d
+2025-03-20 15:20:31,815 - sentiment_agent - INFO - Categorized post 1jffq7d as Photo
+2025-03-20 15:20:31,846 - sentiment_agent - INFO - Sentiment for post 1jffq7d: -0.69 (NEGATIVE)
+2025-03-20 15:20:31,846 - sentiment_agent - INFO - Analyzing 1 images for post 1jftcl8
+2025-03-20 15:20:34,730 - sentiment_agent - INFO - Categorized post 1jftcl8 as Photo
+2025-03-20 15:20:34,761 - sentiment_agent - INFO - Sentiment for post 1jftcl8: 0.39 (POSITIVE)
+2025-03-20 15:20:45,701 - sentiment_agent - INFO - Categorized post 1jfnxwd as Question
+2025-03-20 15:20:45,786 - sentiment_agent - INFO - Sentiment for post 1jfnxwd: -1.00 (NEGATIVE)
+2025-03-20 15:20:45,787 - sentiment_agent - INFO - Analyzing 1 images for post 1jf9p5k
+2025-03-20 15:21:07,402 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 15:21:07,556 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 15:21:08,919 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 15:21:10,340 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 15:21:10,340 - sentiment_agent - INFO - NumPy is available
+2025-03-20 15:21:10,782 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 15:21:10,782 - sentiment_agent - INFO - Starting agent with check interval of 15 minutes
+2025-03-20 15:21:10,783 - sentiment_agent - INFO - Processing RSS feed
+2025-03-20 15:21:10,783 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 15:21:11,522 - sentiment_agent - INFO - Fetched 27 new posts from Reddit JSON API
+2025-03-20 15:21:11,523 - sentiment_agent - INFO - Found 27 new posts
+2025-03-20 15:21:25,408 - sentiment_agent - INFO - Categorized post 1jd7i60 as Weather
+2025-03-20 15:21:25,625 - sentiment_agent - INFO - Sentiment for post 1jd7i60: -0.98 (NEGATIVE)
+2025-03-20 15:21:25,625 - sentiment_agent - INFO - Analyzing 1 images for post 1jfuzy2
+2025-03-20 15:22:15,850 - sentiment_agent - INFO - Categorized post 1jfuzy2 as Other
+2025-03-20 15:22:15,917 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (4672) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:22:15,918 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:22:15,919 - sentiment_agent - ERROR - Error processing post 1jfuzy2: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:22:15,925 - sentiment_agent - INFO - Analyzing 1 images for post 1jfxgpd
+2025-03-20 15:22:21,860 - sentiment_agent - INFO - Categorized post 1jfxgpd as Photo
+2025-03-20 15:22:21,925 - sentiment_agent - INFO - Sentiment for post 1jfxgpd: -0.45 (NEGATIVE)
+2025-03-20 15:22:24,604 - sentiment_agent - INFO - Categorized post 1jfwkw7 as Politics
+2025-03-20 15:22:24,630 - sentiment_agent - INFO - Sentiment for post 1jfwkw7: -1.00 (NEGATIVE)
+2025-03-20 15:22:24,631 - sentiment_agent - INFO - Analyzing 1 images for post 1jfswk4
+2025-03-20 15:22:30,291 - sentiment_agent - INFO - Categorized post 1jfswk4 as Question
+2025-03-20 15:22:30,371 - sentiment_agent - INFO - Sentiment for post 1jfswk4: -0.70 (NEGATIVE)
+2025-03-20 15:23:02,420 - sentiment_agent - INFO - Categorized post 1jfsesn as Other
+2025-03-20 15:23:02,447 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (625) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:23:02,447 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:23:02,447 - sentiment_agent - ERROR - Error processing post 1jfsesn: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:23:07,276 - sentiment_agent - INFO - Categorized post 1jfzf7b as Transportation
+2025-03-20 15:23:07,323 - sentiment_agent - INFO - Sentiment for post 1jfzf7b: 0.51 (POSITIVE)
+2025-03-20 15:23:07,336 - sentiment_agent - INFO - Analyzing 3 images for post 1jfrrrw
+2025-03-20 15:23:07,403 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f: 403 Client Error: Forbidden for url: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 15:23:07,460 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b: 403 Client Error: Forbidden for url: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 15:23:07,514 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739: 403 Client Error: Forbidden for url: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 15:23:11,084 - sentiment_agent - INFO - Categorized post 1jfrrrw as Photo
+2025-03-20 15:23:11,127 - sentiment_agent - INFO - Sentiment for post 1jfrrrw: -0.70 (NEGATIVE)
+2025-03-20 15:23:11,128 - sentiment_agent - INFO - Analyzing 1 images for post 1jffq7d
+2025-03-20 15:23:13,594 - sentiment_agent - INFO - Categorized post 1jffq7d as Photo
+2025-03-20 15:23:13,617 - sentiment_agent - INFO - Sentiment for post 1jffq7d: -0.69 (NEGATIVE)
+2025-03-20 15:23:13,618 - sentiment_agent - INFO - Analyzing 1 images for post 1jftcl8
+2025-03-20 15:23:16,364 - sentiment_agent - INFO - Categorized post 1jftcl8 as Photo
+2025-03-20 15:23:16,393 - sentiment_agent - INFO - Sentiment for post 1jftcl8: 0.39 (POSITIVE)
+2025-03-20 15:23:24,954 - sentiment_agent - INFO - Categorized post 1jfnxwd as Question
+2025-03-20 15:23:25,036 - sentiment_agent - INFO - Sentiment for post 1jfnxwd: -1.00 (NEGATIVE)
+2025-03-20 15:23:25,037 - sentiment_agent - INFO - Analyzing 1 images for post 1jf9p5k
+2025-03-20 15:23:43,881 - sentiment_agent - INFO - Categorized post 1jf9p5k as Photo
+2025-03-20 15:23:44,057 - sentiment_agent - INFO - Sentiment for post 1jf9p5k: -0.70 (NEGATIVE)
+2025-03-20 15:23:46,802 - sentiment_agent - INFO - Categorized post 1jfoipl as Transportation
+2025-03-20 15:23:46,839 - sentiment_agent - INFO - Sentiment for post 1jfoipl: 0.99 (POSITIVE)
+2025-03-20 15:23:46,839 - sentiment_agent - INFO - Analyzing 1 images for post 1jfmsyv
+2025-03-20 15:23:52,703 - sentiment_agent - INFO - Categorized post 1jfmsyv as Photo
+2025-03-20 15:23:52,760 - sentiment_agent - INFO - Sentiment for post 1jfmsyv: -0.69 (NEGATIVE)
+2025-03-20 15:24:00,987 - sentiment_agent - INFO - Categorized post 1jfzif5 as Question
+2025-03-20 15:24:01,062 - sentiment_agent - INFO - Sentiment for post 1jfzif5: -1.00 (NEGATIVE)
+2025-03-20 15:24:01,062 - sentiment_agent - INFO - Analyzing 20 images for post 1jffp5p
+2025-03-20 15:24:01,136 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/3gwtkuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=e15554e23333e734b300e0c8aee0cc1460c396d3: 403 Client Error: Forbidden for url: https://preview.redd.it/3gwtkuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=e15554e23333e734b300e0c8aee0cc1460c396d3
+2025-03-20 15:24:01,200 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/8sxjztisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=fcec3e334719945908cf675da0745a056dadab7c: 403 Client Error: Forbidden for url: https://preview.redd.it/8sxjztisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=fcec3e334719945908cf675da0745a056dadab7c
+2025-03-20 15:24:01,252 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/eh4j8risirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=9836faf1c3036bf48d2492a46e0781671e5a28f2: 403 Client Error: Forbidden for url: https://preview.redd.it/eh4j8risirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=9836faf1c3036bf48d2492a46e0781671e5a28f2
+2025-03-20 15:24:01,306 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/k0eawyisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=90d39722597c8714683dea24f2f6497477e35909: 403 Client Error: Forbidden for url: https://preview.redd.it/k0eawyisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=90d39722597c8714683dea24f2f6497477e35909
+2025-03-20 15:24:01,361 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/u1ocntisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=98cbefe779caceac5403fcec46fc04a2c7e68e79: 403 Client Error: Forbidden for url: https://preview.redd.it/u1ocntisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=98cbefe779caceac5403fcec46fc04a2c7e68e79
+2025-03-20 15:24:01,424 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/wk9y5risirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=c04b9f4b8e3f1134d1c39975ffcf3e2f5f6254a9: 403 Client Error: Forbidden for url: https://preview.redd.it/wk9y5risirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=c04b9f4b8e3f1134d1c39975ffcf3e2f5f6254a9
+2025-03-20 15:24:01,479 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/3qsqsuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=cfd7721387a8d13bf267df50dbc741f141b9d537: 403 Client Error: Forbidden for url: https://preview.redd.it/3qsqsuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=cfd7721387a8d13bf267df50dbc741f141b9d537
+2025-03-20 15:24:01,537 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/bixahuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=23af53833330acc1b6f8528e422e32833a68b10b: 403 Client Error: Forbidden for url: https://preview.redd.it/bixahuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=23af53833330acc1b6f8528e422e32833a68b10b
+2025-03-20 15:24:01,587 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/89f57visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=9f9b69fa33350cbfd489f36d8dff2e84f4533537: 403 Client Error: Forbidden for url: https://preview.redd.it/89f57visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=9f9b69fa33350cbfd489f36d8dff2e84f4533537
+2025-03-20 15:24:01,646 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/qj4vkuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=08a023fa9b8b3019c347e636ce60f4fc895a7826: 403 Client Error: Forbidden for url: https://preview.redd.it/qj4vkuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=08a023fa9b8b3019c347e636ce60f4fc895a7826
+2025-03-20 15:24:01,707 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/eh7mluisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=78e1f55fa16b50577be302d90bd306637849462d: 403 Client Error: Forbidden for url: https://preview.redd.it/eh7mluisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=78e1f55fa16b50577be302d90bd306637849462d
+2025-03-20 15:24:01,764 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/clalh0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=6005ac8a92b004d1a3208721f34e946b0dce1a12: 403 Client Error: Forbidden for url: https://preview.redd.it/clalh0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=6005ac8a92b004d1a3208721f34e946b0dce1a12
+2025-03-20 15:24:01,826 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/adqnc0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=f3277eb12a460cdf0772e990b51fe20affa30234: 403 Client Error: Forbidden for url: https://preview.redd.it/adqnc0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=f3277eb12a460cdf0772e990b51fe20affa30234
+2025-03-20 15:24:01,884 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/hi97i0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=7815f5c25ecfc4f46a65b4a6a83c39c3a10e5fcb: 403 Client Error: Forbidden for url: https://preview.redd.it/hi97i0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=7815f5c25ecfc4f46a65b4a6a83c39c3a10e5fcb
+2025-03-20 15:24:01,952 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/0xb3fvisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=ddae3e685021d8eb99776e2c64a597bded52d31b: 403 Client Error: Forbidden for url: https://preview.redd.it/0xb3fvisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=ddae3e685021d8eb99776e2c64a597bded52d31b
+2025-03-20 15:24:02,023 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/d246wuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=ee3309f60cbf213fe811049ead681ad5fcbccd77: 403 Client Error: Forbidden for url: https://preview.redd.it/d246wuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=ee3309f60cbf213fe811049ead681ad5fcbccd77
+2025-03-20 15:24:02,080 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/9u1t3visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=1a2d5020ffcced5c848c0931c85ad65be4581254: 403 Client Error: Forbidden for url: https://preview.redd.it/9u1t3visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=1a2d5020ffcced5c848c0931c85ad65be4581254
+2025-03-20 15:24:02,135 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/4ulmqvisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=94344e6ed1b16bb31d6a5655ecae5d8383c9ad24: 403 Client Error: Forbidden for url: https://preview.redd.it/4ulmqvisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=94344e6ed1b16bb31d6a5655ecae5d8383c9ad24
+2025-03-20 15:24:02,192 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/uv2na0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=27b4b703135b48b72c74a864443b623595529ad4: 403 Client Error: Forbidden for url: https://preview.redd.it/uv2na0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=27b4b703135b48b72c74a864443b623595529ad4
+2025-03-20 15:24:02,250 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/2q7q5visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=a8bf6255b924a8335c5044077fab63320b565086: 403 Client Error: Forbidden for url: https://preview.redd.it/2q7q5visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=a8bf6255b924a8335c5044077fab63320b565086
+2025-03-20 15:24:04,054 - sentiment_agent - INFO - Categorized post 1jffp5p as Other
+2025-03-20 15:24:04,074 - sentiment_agent - INFO - Sentiment for post 1jffp5p: 0.70 (POSITIVE)
+2025-03-20 15:24:05,726 - sentiment_agent - INFO - Categorized post 1jfpks4 as News
+2025-03-20 15:24:05,746 - sentiment_agent - INFO - Sentiment for post 1jfpks4: 0.99 (POSITIVE)
+2025-03-20 15:24:05,747 - sentiment_agent - INFO - Analyzing 1 images for post 1jfbfhu
+2025-03-20 15:24:08,949 - sentiment_agent - INFO - Categorized post 1jfbfhu as Photo
+2025-03-20 15:24:08,988 - sentiment_agent - INFO - Sentiment for post 1jfbfhu: 0.48 (POSITIVE)
+2025-03-20 15:24:12,047 - sentiment_agent - INFO - Categorized post 1jg080f as Question
+2025-03-20 15:24:12,083 - sentiment_agent - INFO - Sentiment for post 1jg080f: 1.00 (POSITIVE)
+2025-03-20 15:24:13,930 - sentiment_agent - INFO - Categorized post 1jfxjef as Question
+2025-03-20 15:24:13,953 - sentiment_agent - INFO - Sentiment for post 1jfxjef: 1.00 (POSITIVE)
+2025-03-20 15:24:15,842 - sentiment_agent - INFO - Categorized post 1jfdb9v as Politics
+2025-03-20 15:24:15,866 - sentiment_agent - INFO - Sentiment for post 1jfdb9v: 0.99 (POSITIVE)
+2025-03-20 15:24:21,058 - sentiment_agent - INFO - Categorized post 1jfuakp as Question
+2025-03-20 15:24:21,115 - sentiment_agent - INFO - Sentiment for post 1jfuakp: -1.00 (NEGATIVE)
+2025-03-20 15:24:21,115 - sentiment_agent - INFO - Analyzing 1 images for post 1jfzlu5
+2025-03-20 15:24:27,065 - sentiment_agent - INFO - Categorized post 1jfzlu5 as Question
+2025-03-20 15:24:27,135 - sentiment_agent - INFO - Sentiment for post 1jfzlu5: -0.70 (NEGATIVE)
+2025-03-20 15:24:27,135 - sentiment_agent - INFO - Analyzing 1 images for post 1jexj61
+2025-03-20 15:24:34,626 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 15:24:34,757 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 15:24:36,274 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 15:24:45,359 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 15:24:45,360 - sentiment_agent - INFO - NumPy is available
+2025-03-20 15:24:54,466 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 15:24:54,468 - sentiment_agent - INFO - Starting agent with check interval of 10 minutes
+2025-03-20 15:24:54,468 - sentiment_agent - INFO - Loading initial 10 posts on startup
+2025-03-20 15:24:54,468 - sentiment_agent - INFO - Loading initial posts on startup
+2025-03-20 15:24:54,468 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 15:24:55,240 - sentiment_agent - INFO - Fetched 10 new posts from Reddit JSON API
+2025-03-20 15:24:55,241 - sentiment_agent - INFO - Found 10 new posts
+2025-03-20 15:25:09,195 - sentiment_agent - INFO - Categorized post 1jd7i60 as Weather
+2025-03-20 15:25:09,336 - sentiment_agent - INFO - Sentiment for post 1jd7i60: -0.98 (NEGATIVE)
+2025-03-20 15:25:09,336 - sentiment_agent - INFO - Analyzing 1 images for post 1jfuzy2
+2025-03-20 15:26:04,692 - sentiment_agent - INFO - Categorized post 1jfuzy2 as Other
+2025-03-20 15:26:04,752 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (4672) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:26:04,753 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:26:04,754 - sentiment_agent - ERROR - Error processing post 1jfuzy2: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:26:04,758 - sentiment_agent - INFO - Analyzing 1 images for post 1jfxgpd
+2025-03-20 15:26:09,399 - sentiment_agent - INFO - Categorized post 1jfxgpd as Photo
+2025-03-20 15:26:09,452 - sentiment_agent - INFO - Sentiment for post 1jfxgpd: -0.45 (NEGATIVE)
+2025-03-20 15:26:11,466 - sentiment_agent - INFO - Categorized post 1jfwkw7 as Politics
+2025-03-20 15:26:11,490 - sentiment_agent - INFO - Sentiment for post 1jfwkw7: -1.00 (NEGATIVE)
+2025-03-20 15:26:11,491 - sentiment_agent - INFO - Analyzing 1 images for post 1jfswk4
+2025-03-20 15:26:14,998 - sentiment_agent - INFO - Categorized post 1jfswk4 as Question
+2025-03-20 15:26:15,028 - sentiment_agent - INFO - Sentiment for post 1jfswk4: -0.70 (NEGATIVE)
+2025-03-20 15:26:43,523 - sentiment_agent - INFO - Categorized post 1jfsesn as Other
+2025-03-20 15:26:43,550 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (625) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:26:43,550 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:26:43,551 - sentiment_agent - ERROR - Error processing post 1jfsesn: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:26:47,772 - sentiment_agent - INFO - Categorized post 1jfzf7b as Transportation
+2025-03-20 15:26:47,813 - sentiment_agent - INFO - Sentiment for post 1jfzf7b: 0.51 (POSITIVE)
+2025-03-20 15:26:47,813 - sentiment_agent - INFO - Analyzing 3 images for post 1jfrrrw
+2025-03-20 15:26:47,886 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f: 403 Client Error: Forbidden for url: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 15:26:47,942 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b: 403 Client Error: Forbidden for url: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 15:26:47,995 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739: 403 Client Error: Forbidden for url: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 15:26:51,556 - sentiment_agent - INFO - Categorized post 1jfrrrw as Photo
+2025-03-20 15:26:51,595 - sentiment_agent - INFO - Sentiment for post 1jfrrrw: -0.70 (NEGATIVE)
+2025-03-20 15:26:51,596 - sentiment_agent - INFO - Analyzing 1 images for post 1jffq7d
+2025-03-20 15:26:53,982 - sentiment_agent - INFO - Categorized post 1jffq7d as Photo
+2025-03-20 15:26:54,008 - sentiment_agent - INFO - Sentiment for post 1jffq7d: -0.69 (NEGATIVE)
+2025-03-20 15:26:54,009 - sentiment_agent - INFO - Analyzing 1 images for post 1jftcl8
+2025-03-20 15:26:57,452 - sentiment_agent - INFO - Categorized post 1jftcl8 as Photo
+2025-03-20 15:26:57,488 - sentiment_agent - INFO - Sentiment for post 1jftcl8: 0.39 (POSITIVE)
+2025-03-20 15:26:57,489 - sentiment_agent - INFO - Found 1 bursts of negative sentiment
+2025-03-20 15:26:57,489 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 15:26:57,490 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 15:26:57,490 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 3 posts
+2025-03-20 15:26:57,491 - sentiment_agent - INFO - Scheduled to check for new posts every 10 minutes
+2025-03-20 15:26:57,491 - sentiment_agent - INFO - Agent is now watching for new posts...
+2025-03-20 15:30:23,646 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 15:30:23,770 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 15:30:25,051 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 15:30:25,584 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 15:30:25,584 - sentiment_agent - INFO - NumPy is available
+2025-03-20 15:30:26,088 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 15:30:26,089 - sentiment_agent - INFO - Starting agent with check interval of 10 minutes
+2025-03-20 15:30:26,089 - sentiment_agent - INFO - Loading initial 10 posts on startup
+2025-03-20 15:30:26,089 - sentiment_agent - INFO - Loading initial posts on startup
+2025-03-20 15:30:26,089 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 15:30:26,849 - sentiment_agent - INFO - Fetched 10 new posts from Reddit JSON API
+2025-03-20 15:30:26,850 - sentiment_agent - INFO - Found 10 new posts
+2025-03-20 15:30:39,452 - sentiment_agent - INFO - Categorized post 1jd7i60 as Weather
+2025-03-20 15:30:39,586 - sentiment_agent - INFO - Sentiment for post 1jd7i60: -0.98 (NEGATIVE)
+2025-03-20 15:30:39,586 - sentiment_agent - INFO - Analyzing 1 images for post 1jfuzy2
+2025-03-20 15:31:31,800 - sentiment_agent - INFO - Categorized post 1jfuzy2 as Other
+2025-03-20 15:31:31,863 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (4672) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:31:31,863 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:31:31,865 - sentiment_agent - ERROR - Error processing post 1jfuzy2: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:31:31,871 - sentiment_agent - INFO - Analyzing 1 images for post 1jfxgpd
+2025-03-20 15:31:37,466 - sentiment_agent - INFO - Categorized post 1jfxgpd as Photo
+2025-03-20 15:31:37,515 - sentiment_agent - INFO - Sentiment for post 1jfxgpd: -0.45 (NEGATIVE)
+2025-03-20 15:31:39,730 - sentiment_agent - INFO - Categorized post 1jfwkw7 as Politics
+2025-03-20 15:31:39,754 - sentiment_agent - INFO - Sentiment for post 1jfwkw7: -1.00 (NEGATIVE)
+2025-03-20 15:31:39,755 - sentiment_agent - INFO - Analyzing 1 images for post 1jfswk4
+2025-03-20 15:31:43,300 - sentiment_agent - INFO - Categorized post 1jfswk4 as Question
+2025-03-20 15:31:43,333 - sentiment_agent - INFO - Sentiment for post 1jfswk4: -0.70 (NEGATIVE)
+2025-03-20 15:32:13,483 - sentiment_agent - INFO - Categorized post 1jfsesn as Other
+2025-03-20 15:32:13,511 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (625) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:32:13,511 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:32:13,511 - sentiment_agent - ERROR - Error processing post 1jfsesn: 'SentimentAnalyzer' object has no attribute 'intensifiers'
+2025-03-20 15:32:18,647 - sentiment_agent - INFO - Categorized post 1jfzf7b as Transportation
+2025-03-20 15:32:18,687 - sentiment_agent - INFO - Sentiment for post 1jfzf7b: 0.51 (POSITIVE)
+2025-03-20 15:32:18,687 - sentiment_agent - INFO - Analyzing 3 images for post 1jfrrrw
+2025-03-20 15:32:18,762 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f: 403 Client Error: Forbidden for url: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 15:32:18,822 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b: 403 Client Error: Forbidden for url: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 15:32:18,872 - sentiment_agent - ERROR - Error downloading image https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739: 403 Client Error: Forbidden for url: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 15:32:22,791 - sentiment_agent - INFO - Categorized post 1jfrrrw as Photo
+2025-03-20 15:32:22,835 - sentiment_agent - INFO - Sentiment for post 1jfrrrw: -0.70 (NEGATIVE)
+2025-03-20 15:32:22,835 - sentiment_agent - INFO - Analyzing 1 images for post 1jffq7d
+2025-03-20 15:32:26,015 - sentiment_agent - INFO - Categorized post 1jffq7d as Photo
+2025-03-20 15:32:26,043 - sentiment_agent - INFO - Sentiment for post 1jffq7d: -0.69 (NEGATIVE)
+2025-03-20 15:32:26,043 - sentiment_agent - INFO - Analyzing 1 images for post 1jftcl8
+2025-03-20 15:32:28,920 - sentiment_agent - INFO - Categorized post 1jftcl8 as Photo
+2025-03-20 15:32:28,948 - sentiment_agent - INFO - Sentiment for post 1jftcl8: 0.39 (POSITIVE)
+2025-03-20 15:32:28,948 - sentiment_agent - INFO - Found 1 bursts of negative sentiment
+2025-03-20 15:32:28,949 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 15:32:28,949 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 15:32:28,949 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 3 posts
+2025-03-20 15:32:28,949 - sentiment_agent - INFO - Scheduled to check for new posts every 10 minutes
+2025-03-20 15:32:28,949 - sentiment_agent - INFO - Agent is now watching for new posts...
+2025-03-20 15:36:42,418 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 15:36:42,543 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 15:36:43,873 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 15:36:44,295 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 15:36:44,295 - sentiment_agent - INFO - NumPy is available
+2025-03-20 15:36:44,746 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 15:36:44,746 - sentiment_agent - INFO - Starting agent with check interval of 10 minutes
+2025-03-20 15:36:44,747 - sentiment_agent - INFO - Loading initial 10 posts on startup
+2025-03-20 15:36:44,747 - sentiment_agent - INFO - Loading initial posts on startup
+2025-03-20 15:36:44,747 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 15:36:45,312 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/2UxK2cSAeXcB7gT4fsrTNsxFyT80u7XCUq_xJMdS7ZA.jpg?auto=webp&s=9f8b03fa1050e082f021bf0a57d36a2dedcb8596
+2025-03-20 15:36:45,312 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/mlIMWxkF9_wv1cAGHUeozQDSfGbtogU-W2j1VwF8LNs.jpg?auto=webp&s=a967a92249b64dc404216cbbe29095656c4432c4
+2025-03-20 15:36:45,312 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/60tbgwzkfvpe1.jpeg?auto=webp&s=4da72ff7e977ed4ba4f1bc1047b2616fb35c1594
+2025-03-20 15:36:45,313 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/jhy0oja4jrpe1.jpeg?auto=webp&s=8bb2dcda7ea5ec1a28b0295a814272ba419b57bb
+2025-03-20 15:36:45,313 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/fgJx0ObwIl_ZNJsDDzRxuNRnM9oHkqEw1TF-4SULxMs.jpg?auto=webp&s=98b0df0fd56f3e9af75c98e456ff26330def9fd1
+2025-03-20 15:36:45,313 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/W_MKz_TpQwt9e8VLD8WvMKHArYju4qfCfxzPOuJkDOc.jpg?auto=webp&s=e058c97ac62d34f4a8952b254994526bfebec0cd
+2025-03-20 15:36:45,313 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/yQi3B3-ARGpr8w_tRkaavBBNrCqgz8gw2n-Da10RgSk.jpg?auto=webp&s=28bb8c6835db19cd728742b115a9329c15168028
+2025-03-20 15:36:45,314 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/zV8zyQAwNbnH40MOIxOr_9c8shnBT6yXQkV_cnV1KIA.jpg?auto=webp&s=13a5e0aa37e472f3e6506c78e5b7f69e4b1cddca
+2025-03-20 15:36:45,314 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/nx9ds46yswpe1.jpeg?auto=webp&s=a8e5cb3f81a288734a237e812f075755a47f22ec
+2025-03-20 15:36:45,314 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/l575n1ekjnpe1.jpeg?auto=webp&s=062981a4df43dbc67ce85341513c6e01ef743adc
+2025-03-20 15:36:45,314 - sentiment_agent - INFO - Fetched 10 new posts from Reddit JSON API
+2025-03-20 15:36:45,315 - sentiment_agent - INFO - Found 10 new posts
+2025-03-20 15:36:58,499 - sentiment_agent - INFO - Categorized post 1jd7i60 as Weather
+2025-03-20 15:36:58,639 - sentiment_agent - INFO - Sentiment for post 1jd7i60: -0.98 (NEGATIVE)
+2025-03-20 15:36:58,640 - sentiment_agent - INFO - Analyzing 1 images for post 1jfuzy2
+2025-03-20 15:36:58,640 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/2UxK2cSAeXcB7gT4fsrTNsxFyT80u7XCUq_xJMdS7ZA.jpg?auto=webp&s=9f8b03fa1050e082f021bf0a57d36a2dedcb8596
+2025-03-20 15:37:01,458 - sentiment_agent - INFO - Image tags: scoreboard, pier, dock, dockage, docking facility, crane, cinema, movie theater, movie theatre, movie house, picture palace
+2025-03-20 15:37:01,459 - sentiment_agent - INFO - Image caption: Image showing scoreboard, pier, dock, dockage, docking facility
+2025-03-20 15:37:01,459 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:37:49,427 - sentiment_agent - INFO - Categorized post 1jfuzy2 as Other
+2025-03-20 15:37:49,484 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (4678) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:37:49,484 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:37:49,489 - sentiment_agent - INFO - Sentiment for post 1jfuzy2: 0.70 (POSITIVE)
+2025-03-20 15:37:49,489 - sentiment_agent - INFO - Analyzing 1 images for post 1jfxgpd
+2025-03-20 15:37:49,490 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/mlIMWxkF9_wv1cAGHUeozQDSfGbtogU-W2j1VwF8LNs.jpg?auto=webp&s=a967a92249b64dc404216cbbe29095656c4432c4
+2025-03-20 15:37:49,761 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, menu, analog clock, screen, CRT screen, monitor
+2025-03-20 15:37:49,761 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, menu, analog clock
+2025-03-20 15:37:49,761 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:37:54,566 - sentiment_agent - INFO - Categorized post 1jfxgpd as Photo
+2025-03-20 15:37:54,614 - sentiment_agent - INFO - Sentiment for post 1jfxgpd: -0.45 (NEGATIVE)
+2025-03-20 15:37:56,592 - sentiment_agent - INFO - Categorized post 1jfwkw7 as Politics
+2025-03-20 15:37:56,615 - sentiment_agent - INFO - Sentiment for post 1jfwkw7: -1.00 (NEGATIVE)
+2025-03-20 15:37:56,616 - sentiment_agent - INFO - Analyzing 1 images for post 1jfswk4
+2025-03-20 15:37:56,616 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/60tbgwzkfvpe1.jpeg?auto=webp&s=4da72ff7e977ed4ba4f1bc1047b2616fb35c1594
+2025-03-20 15:37:57,028 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, crossword puzzle, crossword, menu, book jacket, dust cover, dust jacket, dust wrapper, envelope
+2025-03-20 15:37:57,029 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, crossword puzzle, crossword, menu
+2025-03-20 15:37:57,029 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:38:00,313 - sentiment_agent - INFO - Categorized post 1jfswk4 as Question
+2025-03-20 15:38:00,353 - sentiment_agent - INFO - Sentiment for post 1jfswk4: -0.70 (NEGATIVE)
+2025-03-20 15:38:29,672 - sentiment_agent - INFO - Categorized post 1jfsesn as Other
+2025-03-20 15:38:29,696 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (625) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 15:38:29,696 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 15:38:29,697 - sentiment_agent - INFO - Sentiment for post 1jfsesn: -1.00 (NEGATIVE)
+2025-03-20 15:38:34,233 - sentiment_agent - INFO - Categorized post 1jfzf7b as Transportation
+2025-03-20 15:38:34,277 - sentiment_agent - INFO - Sentiment for post 1jfzf7b: 0.51 (POSITIVE)
+2025-03-20 15:38:34,277 - sentiment_agent - INFO - Analyzing 3 images for post 1jfrrrw
+2025-03-20 15:38:34,278 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 15:38:34,375 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 15:38:35,256 - sentiment_agent - INFO - Image tags: park bench, mailbox, letter box, ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin, shopping cart, parking meter
+2025-03-20 15:38:35,256 - sentiment_agent - INFO - Image caption: Image showing park bench, mailbox, letter box, ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+2025-03-20 15:38:35,256 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:38:35,257 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 15:38:35,300 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 15:38:36,075 - sentiment_agent - INFO - Image tags: street sign, parking meter, pole, traffic light, traffic signal, stoplight, park bench
+2025-03-20 15:38:36,075 - sentiment_agent - INFO - Image caption: Image showing street sign, parking meter, pole
+2025-03-20 15:38:36,076 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:38:36,076 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 15:38:36,136 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 15:38:36,849 - sentiment_agent - INFO - Image tags: lawn mower, mower, chain saw, chainsaw, tractor, tricycle, trike, velocipede, barrow, garden cart, lawn cart, wheelbarrow
+2025-03-20 15:38:36,849 - sentiment_agent - INFO - Image caption: Image showing lawn mower, mower, chain saw, chainsaw, tractor
+2025-03-20 15:38:36,849 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:38:43,475 - sentiment_agent - INFO - Categorized post 1jfrrrw as Photo
+2025-03-20 15:38:43,548 - sentiment_agent - INFO - Sentiment for post 1jfrrrw: -0.70 (NEGATIVE)
+2025-03-20 15:38:43,548 - sentiment_agent - INFO - Analyzing 1 images for post 1jffq7d
+2025-03-20 15:38:43,549 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/jhy0oja4jrpe1.jpeg?auto=webp&s=8bb2dcda7ea5ec1a28b0295a814272ba419b57bb
+2025-03-20 15:38:43,850 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, envelope, menu, analog clock, ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle
+2025-03-20 15:38:43,850 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, envelope, menu
+2025-03-20 15:38:43,850 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:38:46,259 - sentiment_agent - INFO - Categorized post 1jffq7d as Photo
+2025-03-20 15:38:46,284 - sentiment_agent - INFO - Sentiment for post 1jffq7d: -0.69 (NEGATIVE)
+2025-03-20 15:38:46,284 - sentiment_agent - INFO - Analyzing 1 images for post 1jftcl8
+2025-03-20 15:38:46,284 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/fgJx0ObwIl_ZNJsDDzRxuNRnM9oHkqEw1TF-4SULxMs.jpg?auto=webp&s=98b0df0fd56f3e9af75c98e456ff26330def9fd1
+2025-03-20 15:38:46,567 - sentiment_agent - INFO - Image tags: mobile home, manufactured home, patio, terrace, boathouse, picket fence, paling, bannister, banister, balustrade, balusters, handrail
+2025-03-20 15:38:46,567 - sentiment_agent - INFO - Image caption: Image showing mobile home, manufactured home, patio, terrace, boathouse
+2025-03-20 15:38:46,567 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:38:51,326 - sentiment_agent - INFO - Categorized post 1jftcl8 as Photo
+2025-03-20 15:38:51,375 - sentiment_agent - INFO - Sentiment for post 1jftcl8: 0.39 (POSITIVE)
+2025-03-20 15:38:51,375 - sentiment_agent - INFO - Found 1 bursts of negative sentiment
+2025-03-20 15:38:51,376 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 15:38:51,376 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 15:38:51,376 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 3 posts
+2025-03-20 15:38:51,377 - sentiment_agent - INFO - Scheduled to check for new posts every 10 minutes
+2025-03-20 15:38:51,377 - sentiment_agent - INFO - Agent is now watching for new posts...
+2025-03-20 15:48:52,127 - sentiment_agent - INFO - Processing feed for new posts
+2025-03-20 15:48:52,130 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 15:48:52,742 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/W_MKz_TpQwt9e8VLD8WvMKHArYju4qfCfxzPOuJkDOc.jpg?auto=webp&s=e058c97ac62d34f4a8952b254994526bfebec0cd
+2025-03-20 15:48:52,742 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/yQi3B3-ARGpr8w_tRkaavBBNrCqgz8gw2n-Da10RgSk.jpg?auto=webp&s=28bb8c6835db19cd728742b115a9329c15168028
+2025-03-20 15:48:52,742 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/c8cmtwfw8xpe1.jpeg?auto=webp&s=1d82933fa6af1dca3c74a25657c2f6d9c41ac828
+2025-03-20 15:48:52,742 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/zV8zyQAwNbnH40MOIxOr_9c8shnBT6yXQkV_cnV1KIA.jpg?auto=webp&s=13a5e0aa37e472f3e6506c78e5b7f69e4b1cddca
+2025-03-20 15:48:52,743 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/nx9ds46yswpe1.jpeg?auto=webp&s=a8e5cb3f81a288734a237e812f075755a47f22ec
+2025-03-20 15:48:52,743 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/l575n1ekjnpe1.jpeg?auto=webp&s=062981a4df43dbc67ce85341513c6e01ef743adc
+2025-03-20 15:48:52,743 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/vKQUfdWcmsGqUG9_v4n0AZEQfrsT68WQKAw3eFSSsms.jpg?auto=webp&s=1a49566195bbfa8413c446166d09f6fc4cdac94f
+2025-03-20 15:48:52,743 - sentiment_agent - INFO - Fetched 17 new posts from Reddit JSON API
+2025-03-20 15:48:52,743 - sentiment_agent - INFO - Found 17 new posts
+2025-03-20 15:49:00,227 - sentiment_agent - INFO - Categorized post 1jfnxwd as Question
+2025-03-20 15:49:00,343 - sentiment_agent - INFO - Sentiment for post 1jfnxwd: -1.00 (NEGATIVE)
+2025-03-20 15:49:00,343 - sentiment_agent - INFO - Analyzing 1 images for post 1jf9p5k
+2025-03-20 15:49:00,343 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/W_MKz_TpQwt9e8VLD8WvMKHArYju4qfCfxzPOuJkDOc.jpg?auto=webp&s=e058c97ac62d34f4a8952b254994526bfebec0cd
+2025-03-20 15:49:00,702 - sentiment_agent - INFO - Image tags: flat-coated retriever, Newfoundland, Newfoundland dog, lipstick, lip rouge, Sussex spaniel, cellular telephone, cellular phone, cellphone, cell, mobile phone
+2025-03-20 15:49:00,702 - sentiment_agent - INFO - Image caption: Image showing flat-coated retriever, Newfoundland, Newfoundland dog, lipstick, lip rouge
+2025-03-20 15:49:00,702 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:20,195 - sentiment_agent - INFO - Categorized post 1jf9p5k as Photo
+2025-03-20 15:49:20,370 - sentiment_agent - INFO - Sentiment for post 1jf9p5k: -0.70 (NEGATIVE)
+2025-03-20 15:49:23,682 - sentiment_agent - INFO - Categorized post 1jfoipl as Transportation
+2025-03-20 15:49:23,712 - sentiment_agent - INFO - Sentiment for post 1jfoipl: 0.99 (POSITIVE)
+2025-03-20 15:49:23,713 - sentiment_agent - INFO - Analyzing 1 images for post 1jfmsyv
+2025-03-20 15:49:23,713 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/yQi3B3-ARGpr8w_tRkaavBBNrCqgz8gw2n-Da10RgSk.jpg?auto=webp&s=28bb8c6835db19cd728742b115a9329c15168028
+2025-03-20 15:49:24,018 - sentiment_agent - INFO - Image tags: rifle, assault rifle, assault gun, revolver, six-gun, six-shooter, projectile, missile, holster
+2025-03-20 15:49:24,018 - sentiment_agent - INFO - Image caption: Image showing rifle, assault rifle, assault gun, revolver, six-gun, six-shooter
+2025-03-20 15:49:24,018 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:31,519 - sentiment_agent - INFO - Categorized post 1jfmsyv as News
+2025-03-20 15:49:31,582 - sentiment_agent - INFO - Sentiment for post 1jfmsyv: -0.69 (NEGATIVE)
+2025-03-20 15:49:31,582 - sentiment_agent - INFO - Analyzing 1 images for post 1jg1ply
+2025-03-20 15:49:31,582 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/c8cmtwfw8xpe1.jpeg?auto=webp&s=1d82933fa6af1dca3c74a25657c2f6d9c41ac828
+2025-03-20 15:49:32,970 - sentiment_agent - INFO - Image tags: breakwater, groin, groyne, mole, bulwark, seawall, jetty, dock, dockage, docking facility, beacon, lighthouse, beacon light, pharos, pier, street sign
+2025-03-20 15:49:32,970 - sentiment_agent - INFO - Image caption: Image showing breakwater, groin, groyne, mole, bulwark, seawall, jetty, dock, dockage, docking facility, beacon, lighthouse, beacon light, pharos
+2025-03-20 15:49:32,971 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:37,871 - sentiment_agent - INFO - Categorized post 1jg1ply as Question
+2025-03-20 15:49:37,941 - sentiment_agent - INFO - Sentiment for post 1jg1ply: -0.70 (NEGATIVE)
+2025-03-20 15:49:46,511 - sentiment_agent - INFO - Categorized post 1jfzif5 as Question
+2025-03-20 15:49:46,590 - sentiment_agent - INFO - Sentiment for post 1jfzif5: -1.00 (NEGATIVE)
+2025-03-20 15:49:46,590 - sentiment_agent - INFO - Analyzing 20 images for post 1jffp5p
+2025-03-20 15:49:46,590 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/3gwtkuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=e15554e23333e734b300e0c8aee0cc1460c396d3
+2025-03-20 15:49:46,648 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/3gwtkuisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=e15554e23333e734b300e0c8aee0cc1460c396d3
+2025-03-20 15:49:47,280 - sentiment_agent - INFO - Image tags: comic book, scoreboard, book jacket, dust cover, dust jacket, dust wrapper, cinema, movie theater, movie theatre, movie house, picture palace, bullet train, bullet
+2025-03-20 15:49:47,280 - sentiment_agent - INFO - Image caption: Image showing comic book, scoreboard, book jacket, dust cover, dust jacket, dust wrapper
+2025-03-20 15:49:47,280 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:47,280 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/8sxjztisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=fcec3e334719945908cf675da0745a056dadab7c
+2025-03-20 15:49:47,335 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/8sxjztisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=fcec3e334719945908cf675da0745a056dadab7c
+2025-03-20 15:49:47,945 - sentiment_agent - INFO - Image tags: pedestal, plinth, footstall, fountain, sundial, brass, memorial tablet, plaque, mask
+2025-03-20 15:49:47,945 - sentiment_agent - INFO - Image caption: Image showing pedestal, plinth, footstall, fountain, sundial
+2025-03-20 15:49:47,945 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:47,945 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/eh4j8risirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=9836faf1c3036bf48d2492a46e0781671e5a28f2
+2025-03-20 15:49:48,012 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/eh4j8risirpe1.jpg?width=4608&format=pjpg&auto=webp&s=9836faf1c3036bf48d2492a46e0781671e5a28f2
+2025-03-20 15:49:48,750 - sentiment_agent - INFO - Image tags: brass, memorial tablet, plaque, pedestal, plinth, footstall, sundial, obelisk, doormat, welcome mat
+2025-03-20 15:49:48,750 - sentiment_agent - INFO - Image caption: Image showing brass, memorial tablet, plaque, pedestal, plinth, footstall, sundial
+2025-03-20 15:49:48,750 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:48,750 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/k0eawyisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=90d39722597c8714683dea24f2f6497477e35909
+2025-03-20 15:49:48,806 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/k0eawyisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=90d39722597c8714683dea24f2f6497477e35909
+2025-03-20 15:49:49,416 - sentiment_agent - INFO - Image tags: beacon, lighthouse, beacon light, pharos, water tower, dome, tile roof, window screen
+2025-03-20 15:49:49,416 - sentiment_agent - INFO - Image caption: Image showing beacon, lighthouse, beacon light, pharos, water tower, dome
+2025-03-20 15:49:49,416 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:49,416 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/u1ocntisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=98cbefe779caceac5403fcec46fc04a2c7e68e79
+2025-03-20 15:49:49,476 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/u1ocntisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=98cbefe779caceac5403fcec46fc04a2c7e68e79
+2025-03-20 15:49:50,071 - sentiment_agent - INFO - Image tags: water tower, prison, prison house, dome, beacon, lighthouse, beacon light, pharos, radio telescope, radio reflector
+2025-03-20 15:49:50,071 - sentiment_agent - INFO - Image caption: Image showing water tower, prison, prison house, dome
+2025-03-20 15:49:50,072 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:50,072 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/wk9y5risirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=c04b9f4b8e3f1134d1c39975ffcf3e2f5f6254a9
+2025-03-20 15:49:50,142 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/wk9y5risirpe1.jpg?width=4608&format=pjpg&auto=webp&s=c04b9f4b8e3f1134d1c39975ffcf3e2f5f6254a9
+2025-03-20 15:49:50,711 - sentiment_agent - INFO - Image tags: water tower, snowplow, snowplough, traffic light, traffic signal, stoplight, flagpole, flagstaff, mobile home, manufactured home
+2025-03-20 15:49:50,711 - sentiment_agent - INFO - Image caption: Image showing water tower, snowplow, snowplough, traffic light, traffic signal, stoplight
+2025-03-20 15:49:50,712 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:50,712 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/3qsqsuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=cfd7721387a8d13bf267df50dbc741f141b9d537
+2025-03-20 15:49:50,772 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/3qsqsuisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=cfd7721387a8d13bf267df50dbc741f141b9d537
+2025-03-20 15:49:51,326 - sentiment_agent - INFO - Image tags: cab, hack, taxi, taxicab, traffic light, traffic signal, stoplight, street sign, airship, dirigible, streetcar, tram, tramcar, trolley, trolley car
+2025-03-20 15:49:51,326 - sentiment_agent - INFO - Image caption: Image showing cab, hack, taxi, taxicab, traffic light, traffic signal, stoplight, street sign
+2025-03-20 15:49:51,326 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:51,326 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/bixahuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=23af53833330acc1b6f8528e422e32833a68b10b
+2025-03-20 15:49:51,382 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/bixahuisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=23af53833330acc1b6f8528e422e32833a68b10b
+2025-03-20 15:49:52,008 - sentiment_agent - INFO - Image tags: street sign, traffic light, traffic signal, stoplight, library, palace, cab, hack, taxi, taxicab
+2025-03-20 15:49:52,008 - sentiment_agent - INFO - Image caption: Image showing street sign, traffic light, traffic signal, stoplight, library
+2025-03-20 15:49:52,008 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:52,008 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/89f57visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=9f9b69fa33350cbfd489f36d8dff2e84f4533537
+2025-03-20 15:49:52,061 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/89f57visirpe1.jpg?width=4608&format=pjpg&auto=webp&s=9f9b69fa33350cbfd489f36d8dff2e84f4533537
+2025-03-20 15:49:52,677 - sentiment_agent - INFO - Image tags: bell cote, bell cot, dome, library, tile roof, vault
+2025-03-20 15:49:52,678 - sentiment_agent - INFO - Image caption: Image showing bell cote, bell cot, dome, library
+2025-03-20 15:49:52,678 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:52,678 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/qj4vkuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=08a023fa9b8b3019c347e636ce60f4fc895a7826
+2025-03-20 15:49:52,747 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/qj4vkuisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=08a023fa9b8b3019c347e636ce60f4fc895a7826
+2025-03-20 15:49:53,341 - sentiment_agent - INFO - Image tags: street sign, book jacket, dust cover, dust jacket, dust wrapper, parking meter, comic book, ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+2025-03-20 15:49:53,341 - sentiment_agent - INFO - Image caption: Image showing street sign, book jacket, dust cover, dust jacket, dust wrapper, parking meter
+2025-03-20 15:49:53,341 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:53,342 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/eh7mluisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=78e1f55fa16b50577be302d90bd306637849462d
+2025-03-20 15:49:53,391 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/eh7mluisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=78e1f55fa16b50577be302d90bd306637849462d
+2025-03-20 15:49:53,943 - sentiment_agent - INFO - Image tags: church, church building, bell cote, bell cot, dome, monastery, mosque
+2025-03-20 15:49:53,943 - sentiment_agent - INFO - Image caption: Image showing church, church building, bell cote, bell cot, dome
+2025-03-20 15:49:53,944 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:53,944 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/clalh0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=6005ac8a92b004d1a3208721f34e946b0dce1a12
+2025-03-20 15:49:54,008 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/clalh0jsirpe1.jpg?width=4608&format=pjpg&auto=webp&s=6005ac8a92b004d1a3208721f34e946b0dce1a12
+2025-03-20 15:49:54,572 - sentiment_agent - INFO - Image tags: street sign, traffic light, traffic signal, stoplight, library, tobacco shop, tobacconist shop, tobacconist, vulture
+2025-03-20 15:49:54,572 - sentiment_agent - INFO - Image caption: Image showing street sign, traffic light, traffic signal, stoplight, library
+2025-03-20 15:49:54,572 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:54,572 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/adqnc0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=f3277eb12a460cdf0772e990b51fe20affa30234
+2025-03-20 15:49:54,624 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/adqnc0jsirpe1.jpg?width=4608&format=pjpg&auto=webp&s=f3277eb12a460cdf0772e990b51fe20affa30234
+2025-03-20 15:49:55,161 - sentiment_agent - INFO - Image tags: obelisk, airship, dirigible, balloon, geyser, flagpole, flagstaff
+2025-03-20 15:49:55,161 - sentiment_agent - INFO - Image caption: Image showing obelisk, airship, dirigible, balloon
+2025-03-20 15:49:55,161 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:55,161 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/hi97i0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=7815f5c25ecfc4f46a65b4a6a83c39c3a10e5fcb
+2025-03-20 15:49:55,214 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/hi97i0jsirpe1.jpg?width=4608&format=pjpg&auto=webp&s=7815f5c25ecfc4f46a65b4a6a83c39c3a10e5fcb
+2025-03-20 15:49:55,756 - sentiment_agent - INFO - Image tags: airship, dirigible, flagpole, flagstaff, crane, balloon, traffic light, traffic signal, stoplight
+2025-03-20 15:49:55,756 - sentiment_agent - INFO - Image caption: Image showing airship, dirigible, flagpole, flagstaff, crane
+2025-03-20 15:49:55,756 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:55,756 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/0xb3fvisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=ddae3e685021d8eb99776e2c64a597bded52d31b
+2025-03-20 15:49:55,818 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/0xb3fvisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=ddae3e685021d8eb99776e2c64a597bded52d31b
+2025-03-20 15:49:56,371 - sentiment_agent - INFO - Image tags: flagpole, flagstaff, pole, parachute, chute, airship, dirigible, beacon, lighthouse, beacon light, pharos
+2025-03-20 15:49:56,371 - sentiment_agent - INFO - Image caption: Image showing flagpole, flagstaff, pole, parachute, chute
+2025-03-20 15:49:56,371 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:56,371 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/d246wuisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=ee3309f60cbf213fe811049ead681ad5fcbccd77
+2025-03-20 15:49:56,428 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/d246wuisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=ee3309f60cbf213fe811049ead681ad5fcbccd77
+2025-03-20 15:49:57,004 - sentiment_agent - INFO - Image tags: pedestal, plinth, footstall, mask, cuirass, cowboy boot, fountain
+2025-03-20 15:49:57,005 - sentiment_agent - INFO - Image caption: Image showing pedestal, plinth, footstall, mask, cuirass
+2025-03-20 15:49:57,005 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:57,005 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/9u1t3visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=1a2d5020ffcced5c848c0931c85ad65be4581254
+2025-03-20 15:49:57,065 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/9u1t3visirpe1.jpg?width=4608&format=pjpg&auto=webp&s=1a2d5020ffcced5c848c0931c85ad65be4581254
+2025-03-20 15:49:57,639 - sentiment_agent - INFO - Image tags: dome, flagpole, flagstaff, library, palace, planetarium
+2025-03-20 15:49:57,640 - sentiment_agent - INFO - Image caption: Image showing dome, flagpole, flagstaff, library
+2025-03-20 15:49:57,640 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:57,640 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/4ulmqvisirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=94344e6ed1b16bb31d6a5655ecae5d8383c9ad24
+2025-03-20 15:49:57,705 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/4ulmqvisirpe1.jpg?width=4608&format=pjpg&auto=webp&s=94344e6ed1b16bb31d6a5655ecae5d8383c9ad24
+2025-03-20 15:49:58,254 - sentiment_agent - INFO - Image tags: dome, church, church building, monastery, mosque, flagpole, flagstaff
+2025-03-20 15:49:58,254 - sentiment_agent - INFO - Image caption: Image showing dome, church, church building, monastery
+2025-03-20 15:49:58,254 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:49:58,254 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/uv2na0jsirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=27b4b703135b48b72c74a864443b623595529ad4
+2025-03-20 15:49:58,306 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/uv2na0jsirpe1.jpg?width=4608&format=pjpg&auto=webp&s=27b4b703135b48b72c74a864443b623595529ad4
+2025-03-20 15:49:58,879 - sentiment_agent - INFO - Image tags: flagpole, flagstaff, pole, street sign, airship, dirigible, fire engine, fire truck
+2025-03-20 15:49:58,879 - sentiment_agent - INFO - Image caption: Image showing flagpole, flagstaff, pole, street sign
+2025-03-20 15:49:58,879 - sentiment_agent - INFO - Image sentiment score: -0.20
+2025-03-20 15:49:58,879 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/2q7q5visirpe1.jpg?width=4608&amp;format=pjpg&amp;auto=webp&amp;s=a8bf6255b924a8335c5044077fab63320b565086
+2025-03-20 15:49:58,933 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/2q7q5visirpe1.jpg?width=4608&format=pjpg&auto=webp&s=a8bf6255b924a8335c5044077fab63320b565086
+2025-03-20 15:49:59,555 - sentiment_agent - INFO - Image tags: pizza, pizza pie, bakery, bakeshop, bakehouse, packet, meat loaf, meatloaf, hotdog, hot dog, red hot
+2025-03-20 15:49:59,555 - sentiment_agent - INFO - Image caption: Image showing pizza, pizza pie, bakery, bakeshop, bakehouse, packet
+2025-03-20 15:49:59,555 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:50:15,065 - sentiment_agent - INFO - Categorized post 1jffp5p as Photo
+2025-03-20 15:50:15,224 - sentiment_agent - INFO - Sentiment for post 1jffp5p: 0.68 (POSITIVE)
+2025-03-20 15:50:17,052 - sentiment_agent - INFO - Categorized post 1jfpks4 as News
+2025-03-20 15:50:17,074 - sentiment_agent - INFO - Sentiment for post 1jfpks4: 0.99 (POSITIVE)
+2025-03-20 15:50:17,075 - sentiment_agent - INFO - Analyzing 1 images for post 1jfbfhu
+2025-03-20 15:50:17,075 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/zV8zyQAwNbnH40MOIxOr_9c8shnBT6yXQkV_cnV1KIA.jpg?auto=webp&s=13a5e0aa37e472f3e6506c78e5b7f69e4b1cddca
+2025-03-20 15:50:17,331 - sentiment_agent - INFO - Image tags: mousetrap, plunger, plumber's helper, web site, website, internet site, site, vacuum, vacuum cleaner, power drill
+2025-03-20 15:50:17,331 - sentiment_agent - INFO - Image caption: Image showing mousetrap, plunger, plumber's helper, web site, website, internet site, site
+2025-03-20 15:50:17,331 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:50:21,035 - sentiment_agent - INFO - Categorized post 1jfbfhu as Photo
+2025-03-20 15:50:21,070 - sentiment_agent - INFO - Sentiment for post 1jfbfhu: 0.65 (POSITIVE)
+2025-03-20 15:50:23,103 - sentiment_agent - INFO - Categorized post 1jfxjef as Question
+2025-03-20 15:50:23,126 - sentiment_agent - INFO - Sentiment for post 1jfxjef: 1.00 (POSITIVE)
+2025-03-20 15:50:26,315 - sentiment_agent - INFO - Categorized post 1jg080f as Question
+2025-03-20 15:50:26,344 - sentiment_agent - INFO - Sentiment for post 1jg080f: 1.00 (POSITIVE)
+2025-03-20 15:50:28,353 - sentiment_agent - INFO - Categorized post 1jfdb9v as Politics
+2025-03-20 15:50:28,379 - sentiment_agent - INFO - Sentiment for post 1jfdb9v: 0.99 (POSITIVE)
+2025-03-20 15:50:34,266 - sentiment_agent - INFO - Categorized post 1jfuakp as Question
+2025-03-20 15:50:34,325 - sentiment_agent - INFO - Sentiment for post 1jfuakp: -1.00 (NEGATIVE)
+2025-03-20 15:50:34,325 - sentiment_agent - INFO - Analyzing 1 images for post 1jfzlu5
+2025-03-20 15:50:34,326 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/nx9ds46yswpe1.jpeg?auto=webp&s=a8e5cb3f81a288734a237e812f075755a47f22ec
+2025-03-20 15:50:34,718 - sentiment_agent - INFO - Image tags: computer keyboard, keypad, envelope, mouse, computer mouse, rule, ruler, web site, website, internet site, site
+2025-03-20 15:50:34,718 - sentiment_agent - INFO - Image caption: Image showing computer keyboard, keypad, envelope, mouse, computer mouse
+2025-03-20 15:50:34,718 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:50:41,054 - sentiment_agent - INFO - Categorized post 1jfzlu5 as Question
+2025-03-20 15:50:41,115 - sentiment_agent - INFO - Sentiment for post 1jfzlu5: -0.70 (NEGATIVE)
+2025-03-20 15:50:41,115 - sentiment_agent - INFO - Analyzing 1 images for post 1jexj61
+2025-03-20 15:50:41,115 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/l575n1ekjnpe1.jpeg?auto=webp&s=062981a4df43dbc67ce85341513c6e01ef743adc
+2025-03-20 15:50:41,789 - sentiment_agent - INFO - Image tags: fireboat, breakwater, groin, groyne, mole, bulwark, seawall, jetty, pier, dock, dockage, docking facility, amphibian, amphibious vehicle
+2025-03-20 15:50:41,789 - sentiment_agent - INFO - Image caption: Image showing fireboat, breakwater, groin, groyne, mole, bulwark, seawall, jetty, pier
+2025-03-20 15:50:41,789 - sentiment_agent - INFO - Image sentiment score: -0.20
+2025-03-20 15:50:45,371 - sentiment_agent - INFO - Categorized post 1jexj61 as Question
+2025-03-20 15:50:45,413 - sentiment_agent - INFO - Sentiment for post 1jexj61: -0.75 (NEGATIVE)
+2025-03-20 15:50:47,287 - sentiment_agent - INFO - Categorized post 1jfzukh as Question
+2025-03-20 15:50:47,306 - sentiment_agent - INFO - Sentiment for post 1jfzukh: 0.95 (POSITIVE)
+2025-03-20 15:50:47,306 - sentiment_agent - INFO - Analyzing 1 images for post 1jfzar6
+2025-03-20 15:50:47,306 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/vKQUfdWcmsGqUG9_v4n0AZEQfrsT68WQKAw3eFSSsms.jpg?auto=webp&s=1a49566195bbfa8413c446166d09f6fc4cdac94f
+2025-03-20 15:50:47,664 - sentiment_agent - INFO - Image tags: racket, racquet, lens cap, lens cover, loudspeaker, speaker, speaker unit, loudspeaker system, speaker system, magnetic compass, electric fan, blower
+2025-03-20 15:50:47,664 - sentiment_agent - INFO - Image caption: Image showing racket, racquet, lens cap, lens cover, loudspeaker, speaker, speaker unit, loudspeaker system, speaker system
+2025-03-20 15:50:47,664 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 15:50:50,896 - sentiment_agent - INFO - Categorized post 1jfzar6 as Photo
+2025-03-20 15:50:50,937 - sentiment_agent - INFO - Sentiment for post 1jfzar6: -0.69 (NEGATIVE)
+2025-03-20 15:50:50,938 - sentiment_agent - INFO - Found 2 bursts of negative sentiment
+2025-03-20 15:50:50,938 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 15:50:50,938 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 15:50:50,938 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 5 posts
+2025-03-20 15:50:50,938 - sentiment_agent - INFO - Sending notification for burst in category Question
+2025-03-20 15:50:50,939 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Question
+2025-03-20 15:50:50,939 - sentiment_agent - INFO - Email content preview: Negative burst in Question with 7 posts
+2025-03-20 16:00:51,310 - sentiment_agent - INFO - Processing feed for new posts
+2025-03-20 16:00:51,312 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 16:00:52,037 - sentiment_agent - INFO - Fetched 0 new posts from Reddit JSON API
+2025-03-20 16:00:52,037 - sentiment_agent - INFO - Found 0 new posts
+2025-03-20 16:00:52,037 - sentiment_agent - INFO - Found 2 bursts of negative sentiment
+2025-03-20 16:00:52,037 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 16:00:52,038 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 16:00:52,038 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 5 posts
+2025-03-20 16:00:52,038 - sentiment_agent - INFO - Sending notification for burst in category Question
+2025-03-20 16:00:52,038 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Question
+2025-03-20 16:00:52,038 - sentiment_agent - INFO - Email content preview: Negative burst in Question with 7 posts
+2025-03-20 16:19:57,042 - sentiment_agent - INFO - Processing feed for new posts
+2025-03-20 16:19:57,835 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 16:19:58,747 - sentiment_agent - INFO - Fetched 1 new posts from Reddit JSON API
+2025-03-20 16:19:58,748 - sentiment_agent - INFO - Found 1 new posts
+2025-03-20 16:20:07,398 - sentiment_agent - INFO - Categorized post 1jfm7xy as Question
+2025-03-20 16:20:07,534 - sentiment_agent - INFO - Sentiment for post 1jfm7xy: 0.50 (POSITIVE)
+2025-03-20 16:20:07,534 - sentiment_agent - INFO - Found 2 bursts of negative sentiment
+2025-03-20 16:20:07,534 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 16:20:07,535 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 16:20:07,535 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 5 posts
+2025-03-20 16:20:07,535 - sentiment_agent - INFO - Sending notification for burst in category Question
+2025-03-20 16:20:07,536 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Question
+2025-03-20 16:20:07,536 - sentiment_agent - INFO - Email content preview: Negative burst in Question with 7 posts
+2025-03-20 16:35:50,508 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 16:35:50,641 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 16:35:52,015 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 16:35:52,715 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 16:35:52,716 - sentiment_agent - INFO - NumPy is available
+2025-03-20 16:35:54,094 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 16:35:54,094 - sentiment_agent - INFO - Starting agent with check interval of 10 minutes
+2025-03-20 16:35:54,094 - sentiment_agent - INFO - Starting Web UI on http://localhost:5000
+2025-03-20 16:35:54,095 - sentiment_agent - INFO - Web UI started in background thread
+2025-03-20 16:35:54,095 - sentiment_agent - INFO - Loading initial 10 posts on startup
+2025-03-20 16:35:54,096 - sentiment_agent - INFO - Loading initial posts on startup
+2025-03-20 16:35:54,096 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 16:35:54,862 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/2UxK2cSAeXcB7gT4fsrTNsxFyT80u7XCUq_xJMdS7ZA.jpg?auto=webp&s=9f8b03fa1050e082f021bf0a57d36a2dedcb8596
+2025-03-20 16:35:54,863 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/mlIMWxkF9_wv1cAGHUeozQDSfGbtogU-W2j1VwF8LNs.jpg?auto=webp&s=a967a92249b64dc404216cbbe29095656c4432c4
+2025-03-20 16:35:54,863 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/60tbgwzkfvpe1.jpeg?auto=webp&s=4da72ff7e977ed4ba4f1bc1047b2616fb35c1594
+2025-03-20 16:35:54,863 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/jhy0oja4jrpe1.jpeg?auto=webp&s=8bb2dcda7ea5ec1a28b0295a814272ba419b57bb
+2025-03-20 16:35:54,863 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/fgJx0ObwIl_ZNJsDDzRxuNRnM9oHkqEw1TF-4SULxMs.jpg?auto=webp&s=98b0df0fd56f3e9af75c98e456ff26330def9fd1
+2025-03-20 16:35:54,863 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/W_MKz_TpQwt9e8VLD8WvMKHArYju4qfCfxzPOuJkDOc.jpg?auto=webp&s=e058c97ac62d34f4a8952b254994526bfebec0cd
+2025-03-20 16:35:54,864 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/c8cmtwfw8xpe1.jpeg?auto=webp&s=1d82933fa6af1dca3c74a25657c2f6d9c41ac828
+2025-03-20 16:35:54,864 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/yQi3B3-ARGpr8w_tRkaavBBNrCqgz8gw2n-Da10RgSk.jpg?auto=webp&s=28bb8c6835db19cd728742b115a9329c15168028
+2025-03-20 16:35:54,864 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/zV8zyQAwNbnH40MOIxOr_9c8shnBT6yXQkV_cnV1KIA.jpg?auto=webp&s=13a5e0aa37e472f3e6506c78e5b7f69e4b1cddca
+2025-03-20 16:35:54,864 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/nx9ds46yswpe1.jpeg?auto=webp&s=a8e5cb3f81a288734a237e812f075755a47f22ec
+2025-03-20 16:35:54,864 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/l575n1ekjnpe1.jpeg?auto=webp&s=062981a4df43dbc67ce85341513c6e01ef743adc
+2025-03-20 16:35:54,864 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/vKQUfdWcmsGqUG9_v4n0AZEQfrsT68WQKAw3eFSSsms.jpg?auto=webp&s=1a49566195bbfa8413c446166d09f6fc4cdac94f
+2025-03-20 16:35:54,864 - sentiment_agent - INFO - Fetched 10 new posts from Reddit JSON API
+2025-03-20 16:35:54,865 - sentiment_agent - INFO - Found 10 new posts
+2025-03-20 16:36:13,720 - sentiment_agent - INFO - Categorized post 1jd7i60 as Weather
+2025-03-20 16:36:13,887 - sentiment_agent - INFO - Sentiment for post 1jd7i60: -0.98 (NEGATIVE)
+2025-03-20 16:36:13,887 - sentiment_agent - INFO - Analyzing 1 images for post 1jfuzy2
+2025-03-20 16:36:13,887 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/2UxK2cSAeXcB7gT4fsrTNsxFyT80u7XCUq_xJMdS7ZA.jpg?auto=webp&s=9f8b03fa1050e082f021bf0a57d36a2dedcb8596
+2025-03-20 16:36:15,285 - sentiment_agent - INFO - Image tags: scoreboard, pier, dock, dockage, docking facility, crane, cinema, movie theater, movie theatre, movie house, picture palace
+2025-03-20 16:36:15,285 - sentiment_agent - INFO - Image caption: Image showing scoreboard, pier, dock, dockage, docking facility
+2025-03-20 16:36:15,286 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:37:09,649 - sentiment_agent - INFO - Categorized post 1jfuzy2 as Other
+2025-03-20 16:37:09,853 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (4678) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 16:37:09,853 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 16:37:09,861 - sentiment_agent - INFO - Sentiment for post 1jfuzy2: 0.70 (POSITIVE)
+2025-03-20 16:37:09,862 - sentiment_agent - INFO - Analyzing 1 images for post 1jfxgpd
+2025-03-20 16:37:09,862 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/mlIMWxkF9_wv1cAGHUeozQDSfGbtogU-W2j1VwF8LNs.jpg?auto=webp&s=a967a92249b64dc404216cbbe29095656c4432c4
+2025-03-20 16:37:10,181 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, menu, analog clock, screen, CRT screen, monitor
+2025-03-20 16:37:10,181 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, menu, analog clock
+2025-03-20 16:37:10,181 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:37:16,181 - sentiment_agent - INFO - Categorized post 1jfxgpd as Photo
+2025-03-20 16:37:16,229 - sentiment_agent - INFO - Sentiment for post 1jfxgpd: -0.45 (NEGATIVE)
+2025-03-20 16:37:18,331 - sentiment_agent - INFO - Categorized post 1jfwkw7 as Politics
+2025-03-20 16:37:18,354 - sentiment_agent - INFO - Sentiment for post 1jfwkw7: -1.00 (NEGATIVE)
+2025-03-20 16:37:18,354 - sentiment_agent - INFO - Analyzing 1 images for post 1jfswk4
+2025-03-20 16:37:18,354 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/60tbgwzkfvpe1.jpeg?auto=webp&s=4da72ff7e977ed4ba4f1bc1047b2616fb35c1594
+2025-03-20 16:37:18,768 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, crossword puzzle, crossword, menu, book jacket, dust cover, dust jacket, dust wrapper, envelope
+2025-03-20 16:37:18,768 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, crossword puzzle, crossword, menu
+2025-03-20 16:37:18,768 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:37:22,472 - sentiment_agent - INFO - Categorized post 1jfswk4 as Question
+2025-03-20 16:37:22,505 - sentiment_agent - INFO - Sentiment for post 1jfswk4: -0.70 (NEGATIVE)
+2025-03-20 16:37:51,822 - sentiment_agent - INFO - Categorized post 1jfsesn as Other
+2025-03-20 16:37:51,847 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (625) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 16:37:51,847 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 16:37:51,848 - sentiment_agent - INFO - Sentiment for post 1jfsesn: -1.00 (NEGATIVE)
+2025-03-20 16:37:56,258 - sentiment_agent - INFO - Categorized post 1jfzf7b as Transportation
+2025-03-20 16:37:56,297 - sentiment_agent - INFO - Sentiment for post 1jfzf7b: 0.51 (POSITIVE)
+2025-03-20 16:37:56,297 - sentiment_agent - INFO - Analyzing 3 images for post 1jfrrrw
+2025-03-20 16:37:56,297 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 16:37:56,359 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 16:37:57,230 - sentiment_agent - INFO - Image tags: park bench, mailbox, letter box, ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin, shopping cart, parking meter
+2025-03-20 16:37:57,230 - sentiment_agent - INFO - Image caption: Image showing park bench, mailbox, letter box, ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+2025-03-20 16:37:57,230 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:37:57,230 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 16:37:57,296 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 16:37:58,054 - sentiment_agent - INFO - Image tags: street sign, parking meter, pole, traffic light, traffic signal, stoplight, park bench
+2025-03-20 16:37:58,055 - sentiment_agent - INFO - Image caption: Image showing street sign, parking meter, pole
+2025-03-20 16:37:58,055 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:37:58,055 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 16:37:58,113 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 16:37:58,826 - sentiment_agent - INFO - Image tags: lawn mower, mower, chain saw, chainsaw, tractor, tricycle, trike, velocipede, barrow, garden cart, lawn cart, wheelbarrow
+2025-03-20 16:37:58,827 - sentiment_agent - INFO - Image caption: Image showing lawn mower, mower, chain saw, chainsaw, tractor
+2025-03-20 16:37:58,827 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:38:05,049 - sentiment_agent - INFO - Categorized post 1jfrrrw as Photo
+2025-03-20 16:38:05,110 - sentiment_agent - INFO - Sentiment for post 1jfrrrw: -0.70 (NEGATIVE)
+2025-03-20 16:38:05,110 - sentiment_agent - INFO - Analyzing 1 images for post 1jffq7d
+2025-03-20 16:38:05,110 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/jhy0oja4jrpe1.jpeg?auto=webp&s=8bb2dcda7ea5ec1a28b0295a814272ba419b57bb
+2025-03-20 16:38:05,429 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, envelope, menu, analog clock, ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle
+2025-03-20 16:38:05,429 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, envelope, menu
+2025-03-20 16:38:05,429 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:38:07,529 - sentiment_agent - INFO - Categorized post 1jffq7d as Photo
+2025-03-20 16:38:07,550 - sentiment_agent - INFO - Sentiment for post 1jffq7d: -0.69 (NEGATIVE)
+2025-03-20 16:38:07,550 - sentiment_agent - INFO - Analyzing 1 images for post 1jftcl8
+2025-03-20 16:38:07,550 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/fgJx0ObwIl_ZNJsDDzRxuNRnM9oHkqEw1TF-4SULxMs.jpg?auto=webp&s=98b0df0fd56f3e9af75c98e456ff26330def9fd1
+2025-03-20 16:38:07,804 - sentiment_agent - INFO - Image tags: mobile home, manufactured home, patio, terrace, boathouse, picket fence, paling, bannister, banister, balustrade, balusters, handrail
+2025-03-20 16:38:07,804 - sentiment_agent - INFO - Image caption: Image showing mobile home, manufactured home, patio, terrace, boathouse
+2025-03-20 16:38:07,804 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:38:10,768 - sentiment_agent - INFO - Categorized post 1jftcl8 as Photo
+2025-03-20 16:38:10,804 - sentiment_agent - INFO - Sentiment for post 1jftcl8: 0.39 (POSITIVE)
+2025-03-20 16:38:10,804 - sentiment_agent - INFO - Found 1 bursts of negative sentiment
+2025-03-20 16:38:10,804 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 16:38:10,805 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 16:38:10,805 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 3 posts
+2025-03-20 16:38:10,806 - sentiment_agent - INFO - Scheduled to check for new posts every 10 minutes
+2025-03-20 16:38:10,806 - sentiment_agent - INFO - Agent is now watching for new posts...
+2025-03-20 16:38:43,987 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 16:38:44,123 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 16:38:46,008 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 16:38:47,223 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 16:38:47,223 - sentiment_agent - INFO - NumPy is available
+2025-03-20 16:38:47,857 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 16:38:47,859 - sentiment_agent - INFO - Starting agent with check interval of 10 minutes
+2025-03-20 16:38:47,859 - sentiment_agent - INFO - Starting Web UI on http://localhost:5000
+2025-03-20 16:38:47,860 - sentiment_agent - INFO - Web UI started in background thread
+2025-03-20 16:38:47,860 - sentiment_agent - INFO - Loading initial 10 posts on startup
+2025-03-20 16:38:47,861 - sentiment_agent - INFO - Loading initial posts on startup
+2025-03-20 16:38:47,861 - sentiment_agent - INFO - Fetching posts from https://www.reddit.com/r/boston/.json
+2025-03-20 16:38:47,928 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.86.26:5000
+2025-03-20 16:38:47,929 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-20 16:38:48,507 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/2UxK2cSAeXcB7gT4fsrTNsxFyT80u7XCUq_xJMdS7ZA.jpg?auto=webp&s=9f8b03fa1050e082f021bf0a57d36a2dedcb8596
+2025-03-20 16:38:48,508 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/mlIMWxkF9_wv1cAGHUeozQDSfGbtogU-W2j1VwF8LNs.jpg?auto=webp&s=a967a92249b64dc404216cbbe29095656c4432c4
+2025-03-20 16:38:48,508 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/60tbgwzkfvpe1.jpeg?auto=webp&s=4da72ff7e977ed4ba4f1bc1047b2616fb35c1594
+2025-03-20 16:38:48,509 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/jhy0oja4jrpe1.jpeg?auto=webp&s=8bb2dcda7ea5ec1a28b0295a814272ba419b57bb
+2025-03-20 16:38:48,509 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/fgJx0ObwIl_ZNJsDDzRxuNRnM9oHkqEw1TF-4SULxMs.jpg?auto=webp&s=98b0df0fd56f3e9af75c98e456ff26330def9fd1
+2025-03-20 16:38:48,510 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/W_MKz_TpQwt9e8VLD8WvMKHArYju4qfCfxzPOuJkDOc.jpg?auto=webp&s=e058c97ac62d34f4a8952b254994526bfebec0cd
+2025-03-20 16:38:48,510 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/c8cmtwfw8xpe1.jpeg?auto=webp&s=1d82933fa6af1dca3c74a25657c2f6d9c41ac828
+2025-03-20 16:38:48,510 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/yQi3B3-ARGpr8w_tRkaavBBNrCqgz8gw2n-Da10RgSk.jpg?auto=webp&s=28bb8c6835db19cd728742b115a9329c15168028
+2025-03-20 16:38:48,511 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/zV8zyQAwNbnH40MOIxOr_9c8shnBT6yXQkV_cnV1KIA.jpg?auto=webp&s=13a5e0aa37e472f3e6506c78e5b7f69e4b1cddca
+2025-03-20 16:38:48,511 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/nx9ds46yswpe1.jpeg?auto=webp&s=a8e5cb3f81a288734a237e812f075755a47f22ec
+2025-03-20 16:38:48,511 - sentiment_agent - INFO - Found Reddit preview image: https://preview.redd.it/l575n1ekjnpe1.jpeg?auto=webp&s=062981a4df43dbc67ce85341513c6e01ef743adc
+2025-03-20 16:38:48,511 - sentiment_agent - INFO - Found Reddit preview image: https://external-preview.redd.it/vKQUfdWcmsGqUG9_v4n0AZEQfrsT68WQKAw3eFSSsms.jpg?auto=webp&s=1a49566195bbfa8413c446166d09f6fc4cdac94f
+2025-03-20 16:38:48,512 - sentiment_agent - INFO - Fetched 10 new posts from Reddit JSON API
+2025-03-20 16:38:48,512 - sentiment_agent - INFO - Found 10 new posts
+2025-03-20 16:39:05,139 - sentiment_agent - INFO - Categorized post 1jd7i60 as Weather
+2025-03-20 16:39:05,287 - sentiment_agent - INFO - Sentiment for post 1jd7i60: -0.98 (NEGATIVE)
+2025-03-20 16:39:05,288 - sentiment_agent - INFO - Analyzing 1 images for post 1jfuzy2
+2025-03-20 16:39:05,288 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/2UxK2cSAeXcB7gT4fsrTNsxFyT80u7XCUq_xJMdS7ZA.jpg?auto=webp&s=9f8b03fa1050e082f021bf0a57d36a2dedcb8596
+2025-03-20 16:39:06,627 - sentiment_agent - INFO - Image tags: scoreboard, pier, dock, dockage, docking facility, crane, cinema, movie theater, movie theatre, movie house, picture palace
+2025-03-20 16:39:06,627 - sentiment_agent - INFO - Image caption: Image showing scoreboard, pier, dock, dockage, docking facility
+2025-03-20 16:39:06,628 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:40:00,940 - sentiment_agent - INFO - Categorized post 1jfuzy2 as Other
+2025-03-20 16:40:01,010 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (4678) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 16:40:01,010 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 16:40:01,016 - sentiment_agent - INFO - Sentiment for post 1jfuzy2: 0.70 (POSITIVE)
+2025-03-20 16:40:01,016 - sentiment_agent - INFO - Analyzing 1 images for post 1jfxgpd
+2025-03-20 16:40:01,016 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/mlIMWxkF9_wv1cAGHUeozQDSfGbtogU-W2j1VwF8LNs.jpg?auto=webp&s=a967a92249b64dc404216cbbe29095656c4432c4
+2025-03-20 16:40:01,331 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, menu, analog clock, screen, CRT screen, monitor
+2025-03-20 16:40:01,331 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, menu, analog clock
+2025-03-20 16:40:01,332 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:40:06,699 - sentiment_agent - INFO - Categorized post 1jfxgpd as Photo
+2025-03-20 16:40:06,749 - sentiment_agent - INFO - Sentiment for post 1jfxgpd: -0.45 (NEGATIVE)
+2025-03-20 16:40:08,929 - sentiment_agent - INFO - Categorized post 1jfwkw7 as Politics
+2025-03-20 16:40:08,954 - sentiment_agent - INFO - Sentiment for post 1jfwkw7: -1.00 (NEGATIVE)
+2025-03-20 16:40:08,954 - sentiment_agent - INFO - Analyzing 1 images for post 1jfswk4
+2025-03-20 16:40:08,954 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/60tbgwzkfvpe1.jpeg?auto=webp&s=4da72ff7e977ed4ba4f1bc1047b2616fb35c1594
+2025-03-20 16:40:09,331 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, crossword puzzle, crossword, menu, book jacket, dust cover, dust jacket, dust wrapper, envelope
+2025-03-20 16:40:09,332 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, crossword puzzle, crossword, menu
+2025-03-20 16:40:09,332 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:40:12,654 - sentiment_agent - INFO - Categorized post 1jfswk4 as Question
+2025-03-20 16:40:12,689 - sentiment_agent - INFO - Sentiment for post 1jfswk4: -0.70 (NEGATIVE)
+2025-03-20 16:40:41,763 - sentiment_agent - INFO - Categorized post 1jfsesn as Other
+2025-03-20 16:40:41,787 - sentiment_agent - ERROR - ML sentiment analysis failed: The size of tensor a (625) must match the size of tensor b (512) at non-singleton dimension 1
+2025-03-20 16:40:41,787 - sentiment_agent - INFO - Falling back to rule-based sentiment analysis
+2025-03-20 16:40:41,788 - sentiment_agent - INFO - Sentiment for post 1jfsesn: -1.00 (NEGATIVE)
+2025-03-20 16:40:46,469 - sentiment_agent - INFO - Categorized post 1jfzf7b as Transportation
+2025-03-20 16:40:46,511 - sentiment_agent - INFO - Sentiment for post 1jfzf7b: 0.51 (POSITIVE)
+2025-03-20 16:40:46,512 - sentiment_agent - INFO - Analyzing 3 images for post 1jfrrrw
+2025-03-20 16:40:46,512 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 16:40:46,590 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/po9ik4607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=cc5df7be15935095d6f02997726915a9a263b29f
+2025-03-20 16:40:47,483 - sentiment_agent - INFO - Image tags: park bench, mailbox, letter box, ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin, shopping cart, parking meter
+2025-03-20 16:40:47,483 - sentiment_agent - INFO - Image caption: Image showing park bench, mailbox, letter box, ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+2025-03-20 16:40:47,484 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:40:47,484 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 16:40:47,538 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/97qq04607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=fa8f63cd2c5e3b0d795407754f262aa9df0c625b
+2025-03-20 16:40:48,398 - sentiment_agent - INFO - Image tags: street sign, parking meter, pole, traffic light, traffic signal, stoplight, park bench
+2025-03-20 16:40:48,398 - sentiment_agent - INFO - Image caption: Image showing street sign, parking meter, pole
+2025-03-20 16:40:48,398 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:40:48,398 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&amp;format=pjpg&amp;auto=webp&amp;s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 16:40:48,464 - sentiment_agent - INFO - Retrying with cleaned URL: https://preview.redd.it/snz6y3607vpe1.jpg?width=3024&format=pjpg&auto=webp&s=bf598dce46332ef06197775b82411ad2710d8739
+2025-03-20 16:40:49,835 - sentiment_agent - INFO - Image tags: lawn mower, mower, chain saw, chainsaw, tractor, tricycle, trike, velocipede, barrow, garden cart, lawn cart, wheelbarrow
+2025-03-20 16:40:49,835 - sentiment_agent - INFO - Image caption: Image showing lawn mower, mower, chain saw, chainsaw, tractor
+2025-03-20 16:40:49,836 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:40:58,103 - sentiment_agent - INFO - Categorized post 1jfrrrw as Photo
+2025-03-20 16:40:58,168 - sentiment_agent - INFO - Sentiment for post 1jfrrrw: -0.70 (NEGATIVE)
+2025-03-20 16:40:58,169 - sentiment_agent - INFO - Analyzing 1 images for post 1jffq7d
+2025-03-20 16:40:58,169 - sentiment_agent - INFO - Downloading image from: https://preview.redd.it/jhy0oja4jrpe1.jpeg?auto=webp&s=8bb2dcda7ea5ec1a28b0295a814272ba419b57bb
+2025-03-20 16:40:58,487 - sentiment_agent - INFO - Image tags: web site, website, internet site, site, envelope, menu, analog clock, ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle
+2025-03-20 16:40:58,488 - sentiment_agent - INFO - Image caption: Image showing web site, website, internet site, site, envelope, menu
+2025-03-20 16:40:58,488 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:41:00,975 - sentiment_agent - INFO - Categorized post 1jffq7d as Photo
+2025-03-20 16:41:01,009 - sentiment_agent - INFO - Sentiment for post 1jffq7d: -0.69 (NEGATIVE)
+2025-03-20 16:41:01,009 - sentiment_agent - INFO - Analyzing 1 images for post 1jftcl8
+2025-03-20 16:41:01,009 - sentiment_agent - INFO - Downloading image from: https://external-preview.redd.it/fgJx0ObwIl_ZNJsDDzRxuNRnM9oHkqEw1TF-4SULxMs.jpg?auto=webp&s=98b0df0fd56f3e9af75c98e456ff26330def9fd1
+2025-03-20 16:41:01,337 - sentiment_agent - INFO - Image tags: mobile home, manufactured home, patio, terrace, boathouse, picket fence, paling, bannister, banister, balustrade, balusters, handrail
+2025-03-20 16:41:01,338 - sentiment_agent - INFO - Image caption: Image showing mobile home, manufactured home, patio, terrace, boathouse
+2025-03-20 16:41:01,338 - sentiment_agent - INFO - Image sentiment score: 0.00
+2025-03-20 16:41:04,113 - sentiment_agent - INFO - Categorized post 1jftcl8 as Photo
+2025-03-20 16:41:04,146 - sentiment_agent - INFO - Sentiment for post 1jftcl8: 0.39 (POSITIVE)
+2025-03-20 16:41:04,146 - sentiment_agent - INFO - Found 1 bursts of negative sentiment
+2025-03-20 16:41:04,146 - sentiment_agent - INFO - Sending notification for burst in category Photo
+2025-03-20 16:41:04,147 - sentiment_agent - INFO - DEMO MODE - Would send email with subject: Alert: Negative Sentiment Burst in r/boston - Photo
+2025-03-20 16:41:04,147 - sentiment_agent - INFO - Email content preview: Negative burst in Photo with 3 posts
+2025-03-20 16:41:04,147 - sentiment_agent - INFO - Scheduled to check for new posts every 10 minutes
+2025-03-20 16:41:04,147 - sentiment_agent - INFO - Agent is now watching for new posts...
+2025-03-20 16:44:15,588 - sentiment_agent - INFO - Demo mode enabled via command line
+2025-03-20 16:44:15,588 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 16:44:15,701 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 16:44:16,883 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 16:44:17,385 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 16:44:17,385 - sentiment_agent - INFO - NumPy is available
+2025-03-20 16:44:17,874 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 16:44:17,874 - sentiment_agent - INFO - Starting agent with check interval of 10 minutes
+2025-03-20 16:44:17,874 - sentiment_agent - INFO - 🔔 DEMO MODE ENABLED - Using sample data instead of real Reddit data 🔔
+2025-03-20 16:44:17,875 - sentiment_agent - INFO - Loading initial 10 posts on startup
+2025-03-20 16:44:17,875 - sentiment_agent - INFO - Loading initial posts on startup
+2025-03-20 16:44:17,875 - sentiment_agent - INFO - Running in DEMO MODE - using sample data instead of real API
+2025-03-20 16:44:17,875 - sentiment_agent - INFO - Returning 5 sample posts
+2025-03-20 16:44:17,875 - sentiment_agent - INFO - Found 5 new posts
+2025-03-20 16:44:24,113 - sentiment_agent - INFO - Categorized post sample1 as Photo
+2025-03-20 16:44:24,287 - sentiment_agent - INFO - Sentiment for post sample1: 1.00 (POSITIVE)
+2025-03-20 16:44:24,289 - sentiment_agent - INFO - Saved 1 posts to posts_data.pickle
+2025-03-20 16:44:26,663 - sentiment_agent - INFO - Categorized post sample2 as Question
+2025-03-20 16:44:26,688 - sentiment_agent - INFO - Sentiment for post sample2: -1.00 (NEGATIVE)
+2025-03-20 16:44:26,688 - sentiment_agent - INFO - Saved 2 posts to posts_data.pickle
+2025-03-20 16:44:29,121 - sentiment_agent - INFO - Categorized post sample3 as Question
+2025-03-20 16:44:29,145 - sentiment_agent - INFO - Sentiment for post sample3: 1.00 (POSITIVE)
+2025-03-20 16:44:29,147 - sentiment_agent - INFO - Saved 3 posts to posts_data.pickle
+2025-03-20 16:44:31,379 - sentiment_agent - INFO - Categorized post sample4 as Transportation
+2025-03-20 16:44:31,406 - sentiment_agent - INFO - Sentiment for post sample4: -1.00 (NEGATIVE)
+2025-03-20 16:44:31,406 - sentiment_agent - INFO - Saved 4 posts to posts_data.pickle
+2025-03-20 16:44:33,982 - sentiment_agent - INFO - Categorized post sample5 as Question
+2025-03-20 16:44:34,010 - sentiment_agent - INFO - Sentiment for post sample5: 0.80 (POSITIVE)
+2025-03-20 16:44:34,011 - sentiment_agent - INFO - Saved 5 posts to posts_data.pickle
+2025-03-20 16:44:34,011 - sentiment_agent - INFO - Found 0 bursts of negative sentiment
+2025-03-20 16:44:34,011 - sentiment_agent - INFO - Scheduled to check for new posts every 10 minutes
+2025-03-20 16:44:34,011 - sentiment_agent - INFO - Agent is now watching for new posts...
+2025-03-20 16:47:57,205 - sentiment_agent - INFO - Demo mode enabled via command line
+2025-03-20 16:47:57,205 - sentiment_agent - INFO - Initializing Sentiment Agent
+2025-03-20 16:47:57,326 - sentiment_agent - INFO - Initializing zero-shot classification pipeline
+2025-03-20 16:47:58,631 - sentiment_agent - INFO - Initializing sentiment analysis pipeline
+2025-03-20 16:47:59,095 - sentiment_agent - INFO - Initializing Image Analyzer
+2025-03-20 16:47:59,095 - sentiment_agent - INFO - NumPy is available
+2025-03-20 16:47:59,566 - sentiment_agent - INFO - Image classification model loaded successfully
+2025-03-20 16:47:59,566 - sentiment_agent - INFO - Loaded 5 posts from posts_data.pickle
+2025-03-20 16:47:59,566 - sentiment_agent - INFO - Starting agent with check interval of 10 minutes
+2025-03-20 16:47:59,566 - sentiment_agent - INFO - 🔔 DEMO MODE ENABLED - Using sample data instead of real Reddit data 🔔
+2025-03-20 16:47:59,566 - sentiment_agent - INFO - Loading initial 10 posts on startup
+2025-03-20 16:47:59,566 - sentiment_agent - INFO - Loading initial posts on startup
+2025-03-20 16:47:59,567 - sentiment_agent - INFO - Running in DEMO MODE - using sample data instead of real API
+2025-03-20 16:47:59,567 - sentiment_agent - INFO - Returning 5 sample posts
+2025-03-20 16:47:59,567 - sentiment_agent - INFO - Found 5 new posts
+2025-03-20 16:48:01,865 - sentiment_agent - INFO - Categorized post sample1 as Photo
+2025-03-20 16:48:01,898 - sentiment_agent - INFO - Sentiment for post sample1: 1.00 (POSITIVE)
+2025-03-20 16:48:01,899 - sentiment_agent - INFO - Saved 6 posts to posts_data.pickle
+2025-03-20 16:48:04,018 - sentiment_agent - INFO - Categorized post sample2 as Question
+2025-03-20 16:48:04,036 - sentiment_agent - INFO - Sentiment for post sample2: -1.00 (NEGATIVE)
+2025-03-20 16:48:04,036 - sentiment_agent - INFO - Saved 7 posts to posts_data.pickle
+2025-03-20 16:48:06,023 - sentiment_agent - INFO - Categorized post sample3 as Question
+2025-03-20 16:48:06,048 - sentiment_agent - INFO - Sentiment for post sample3: 1.00 (POSITIVE)
+2025-03-20 16:48:06,048 - sentiment_agent - INFO - Saved 8 posts to posts_data.pickle
+2025-03-20 16:48:08,076 - sentiment_agent - INFO - Categorized post sample4 as Transportation
+2025-03-20 16:48:08,109 - sentiment_agent - INFO - Sentiment for post sample4: -1.00 (NEGATIVE)
+2025-03-20 16:48:08,110 - sentiment_agent - INFO - Saved 9 posts to posts_data.pickle
+2025-03-20 16:48:10,817 - sentiment_agent - INFO - Categorized post sample5 as Question
+2025-03-20 16:48:10,847 - sentiment_agent - INFO - Sentiment for post sample5: 0.80 (POSITIVE)
+2025-03-20 16:48:10,848 - sentiment_agent - INFO - Saved 10 posts to posts_data.pickle
+2025-03-20 16:48:10,848 - sentiment_agent - INFO - Found 0 bursts of negative sentiment
+2025-03-20 16:48:10,848 - sentiment_agent - INFO - Scheduled to check for new posts every 10 minutes
+2025-03-20 16:48:10,848 - sentiment_agent - INFO - Agent is now watching for new posts...

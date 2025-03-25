@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: reddit-sentiment-analyzer
+    env: docker
+    repo: https://github.com/yourusername/your-repo-name
+    branch: main
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /_stcore/health
+    port: 8501
+    disk:
+      name: data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: REDDIT_JSON_URL
+        sync: false
+      - key: DEMO_MODE
+        value: false
+      - key: EMAIL_SENDER
+        sync: false
+      - key: EMAIL_PASSWORD
+        sync: false
+      - key: EMAIL_RECIPIENT
+        sync: false
+      - key: SMTP_SERVER
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: 587
